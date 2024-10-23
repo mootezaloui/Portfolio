@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.71628921.css",
+    "main.js": "/portfolio/static/js/main.dd573de5.js",
+    "static/media/Project1.png": "/portfolio/static/media/Project1.342cd3f921c3cacdb20c.png",
+    "static/media/ProfilePic.png": "/portfolio/static/media/ProfilePic.b144f454dcedc185e913.png",
+    "static/media/ProjectGraph.png": "/portfolio/static/media/ProjectGraph.91b95066058949a04884.png",
+    "static/media/Tutoring_Project.png": "/portfolio/static/media/Tutoring_Project.28432580fbfadf53f9f6.png",
+    "static/media/Project Avocat2.png": "/portfolio/static/media/Project Avocat2.7ebd750daacd59d21c6f.png",
+    "static/media/Project AI.jpg": "/portfolio/static/media/Project AI.212361a2f9ae726e872e.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.71628921.css.map": "/portfolio/static/css/main.71628921.css.map",
+    "main.dd573de5.js.map": "/portfolio/static/js/main.dd573de5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71628921.css",
+    "static/js/main.dd573de5.js"
+  ]
+}

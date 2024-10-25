@@ -1,0 +1,71 @@
+{
+    "projects": [
+        {
+            "title": "Equation Solver Chat Bot",
+            "description": "Built a chat bot using Python and Docker...",
+            "image": "AI_ChatBot",
+            "github": "https://github.com/mootezaloui/equation-solver-chatbot",
+            "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7197166266959171585/",
+            "tags": ["Python", "Docker", "Vue.js"],
+            "features": ["Real-time equation solving", "User-friendly chat interface", "Integration with Docker for easy deployment"],
+            "technicalDetails": "Utilized Python for backend processing..."
+          },
+      {
+        "title": "Virus Propagation Simulation Covid-19",
+        "description": "Developed a simulation using Python, Graph Theory, and Probability to optimize Virus Propagation control strategies.",
+        "image": "Graph_project",
+        "github": "https://github.com/Gathaa/GraphTheory",
+        "demo": "",
+        "tags": ["Python", "Graph Theory", "Probability"],
+        "features": [
+          "Realistic Virus spread modeling",
+          "Data visualization of simulation results",
+          "Optimization algorithms for Virus control"
+        ],
+        "technicalDetails": "Implemented algorithms based on graph theory and probability to simulate Virus behavior in various scenarios."
+      },
+      {
+        "title": "Management Software for Law Firm",
+        "description": "Developed a management system that cut legal file processing time by 40% using Node.js, Express, and MongoDB.",
+        "image": "Avocat_Dashboard",
+        "github": "https://github.com/mootezaloui/Avocat-Project",
+        "demo": "",
+        "tags": ["Node.js", "Express", "PostgreSQL", "React"],
+        "features": [
+          "Document management system",
+          "Time tracking and billing features",
+          "User-friendly interface for legal professionals"
+        ],
+        "technicalDetails": "Built using a MERN stack, with Express for the backend API and React for the frontend interface."
+      },
+      {
+        "title": "Messenger-Live Messaging Application",
+        "description": "Developed a real-time messaging application similar to Slack using Node.js, React, and WebSocket.",
+        "image": "slackAppImage",
+        "github": "https://github.com/yassin014/softproject",
+        "demo": "",
+        "tags": ["Node.js", "React", "WebSocket", "MongoDB"],
+        "features": [
+          "Real-time messaging capabilities",
+          "User authentication and profiles",
+          "Channel creation and management"
+        ],
+        "technicalDetails": "Leveraged WebSocket for real-time communication and MongoDB for data storage."
+      },
+      {
+        "title": "Tutoring Applications",
+        "description": "Developed a cross-platform tutoring app that connects students and tutors with live chat, scheduling tools, and resource access.",
+        "image": "Tutoring_Project",
+        "github": "https://github.com/mootezaloui/TutoringPROJECT",
+        "demo": "",
+        "tags": ["Node.js", "React", "React Native", "MySQL", "Express.js"],
+        "features": [
+          "Live chat functionality between students and tutors",
+          "Scheduling tools for easy appointment management",
+          "Admin dashboard for data tracking and user management"
+        ],
+        "technicalDetails": "Developed a cross-platform application using React Native for mobile and Node.js/Express for the backend."
+      }
+    ]
+  }
+  

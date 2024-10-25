@@ -1,0 +1,77 @@
+{
+    "skillCategories": [
+      {
+        "id": "languages",
+        "icon": "Code",
+        "title": "Programming Languages",
+        "skills": [
+          { "name": "Python", "level": 90, "years": 3 },
+          { "name": "JavaScript", "level": 85, "years": 2 },
+          { "name": "TypeScript", "level": 75, "years": 1 },
+          { "name": "Java", "level": 70, "years": 2 },
+          { "name": "SQL", "level": 80, "years": 2 }
+        ]
+      },
+      {
+        "id": "frontend",
+        "icon": "Globe",
+        "title": "Frontend Development",
+        "skills": [
+          { "name": "React", "level": 85, "years": 2 },
+          { "name": "Vue.js", "level": 75, "years": 1 },
+          { "name": "HTML/CSS", "level": 90, "years": 3 },
+          { "name": "Tailwind CSS", "level": 85, "years": 2 },
+          { "name": "Next.js", "level": 70, "years": 1 }
+        ]
+      },
+      {
+        "id": "backend",
+        "icon": "Server",
+        "title": "Backend Development",
+        "skills": [
+          { "name": "Node.js", "level": 80, "years": 2 },
+          { "name": "Express.js", "level": 85, "years": 2 },
+          { "name": "MongoDB", "level": 75, "years": 2 },
+          { "name": "PostgreSQL", "level": 70, "years": 1 },
+          { "name": "RESTful APIs", "level": 85, "years": 2 }
+        ]
+      },
+      {
+        "id": "tools",
+        "icon": "Briefcase",
+        "title": "Tools & Practices",
+        "skills": [
+          { "name": "Git", "level": 90, "years": 3 },
+          { "name": "Docker", "level": 75, "years": 1 },
+          { "name": "AWS", "level": 70, "years": 1 },
+          { "name": "CI/CD", "level": 80, "years": 2 },
+          { "name": "Agile/Scrum", "level": 85, "years": 2 }
+        ]
+      },
+      {
+        "id": "soft",
+        "icon": "Users",
+        "title": "Soft Skills",
+        "skills": [
+          { "name": "Team Leadership", "level": 85, "years": 2 },
+          { "name": "Problem Solving", "level": 90, "years": 3 },
+          { "name": "Communication", "level": 85, "years": 3 },
+          { "name": "Project Management", "level": 80, "years": 2 },
+          { "name": "Mentoring", "level": 75, "years": 1 }
+        ]
+      },
+      {
+        "id": "ai",
+        "icon": "Brain",
+        "title": "AI & ML",
+        "skills": [
+          { "name": "Machine Learning", "level": 75, "years": 1 },
+          { "name": "TensorFlow", "level": 70, "years": 1 },
+          { "name": "Data Analysis", "level": 80, "years": 2 },
+          { "name": "NLP", "level": 70, "years": 1 },
+          { "name": "Computer Vision", "level": 65, "years": 1 }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,79 @@
+{
+    "experiences": [
+      {
+        "title": "Software Engineer Intern",
+        "company": "RedStart",
+        "period": "May 2024 - Present",
+        "achievements": [
+          "Engineered and deployed a web application with integrated cyber security and AI features, enhancing data protection for over 500 users.",
+          "Boosted system reliability by 20% through innovative cloud computing solutions using Python, Django, and AWS.",
+          "Led a collaborative effort to optimize backend services with Docker, resulting in a more secure and efficient system."
+        ]
+      },
+      {
+        "title": "Freelancer",
+        "company": "Law Firm",
+        "period": "June 2022 - Jan 2024",
+        "achievements": [
+          "Developed management software using Node.js and MongoDB that reduced legal file processing time by 40%, significantly improving efficiency.",
+          "Increased client satisfaction by 30% by creating a user-friendly interface and providing ongoing compliance support.",
+          "Integrated Express.js for smooth data flow and enhanced user experience across the platform."
+        ]
+      },
+      {
+        "title": "Junior Student Intern",
+        "company": "Carrier",
+        "period": "Summer 2022",
+        "achievements": [
+          "Contributed to the design and testing of HVAC systems using AutoCAD and MATLAB, gaining practical engineering experience.",
+          "Supported optimization efforts in system design, reducing production times by 15%."
+        ]
+      },
+      {
+        "title": "Apple Developer & Tester",
+        "company": "Apple",
+        "period": "Sept 2021 - Present",
+        "achievements": [
+          "Optimized iOS to enhance user experience and performance, leading to increased user engagement.",
+          "Collaborated with global teams to ensure high code quality and seamless feature launches using Swift and Xcode."
+        ]
+      },
+      {
+        "title": "Library Officer",
+        "company": "SMU",
+        "period": "Sept 2021 - Present",
+        "achievements": [
+          "Organized academic events and streamlined resource management, increasing student engagement by 25%.",
+          "Implemented digital systems that improved library service efficiency by 20%."
+        ]
+      },
+      {
+        "title": "Sponsoring Manager",
+        "company": "IEEE SMU Student Branch",
+        "period": "Dec 2020 - Dec 2022",
+        "achievements": [
+          "Led a team of 15, securing over $10,000 in sponsorship and organizing conferences that boosted technical skills and networking opportunities for students.",
+          "Implemented effective fundraising strategies, surpassing financial targets by 15%."
+        ]
+      },
+      {
+        "title": "Member",
+        "company": "Tunis Mediterranean Rotaract",
+        "period": "Mar 2020 - Nov 2023",
+        "achievements": [
+          "Contributed to over 10 humanitarian projects, positively impacting over 200 individuals through community development initiatives.",
+          "Led efforts in service projects, enhancing the organization's impact on local communities."
+        ]
+      },
+      {
+        "title": "Admission's Officer Intern",
+        "company": "SMU",
+        "period": "Summer 2021",
+        "achievements": [
+          "Supported the recruitment and onboarding processes, leading to a 15% increase in student applications.",
+          "Streamlined administrative workflows using CRM software and MS Office, improving operational efficiency by 20%."
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,172 @@
+{
+  "certifications": [
+    {
+      "title": "Dynamic Programming, Greedy Algorithms",
+      "issuer": "University of Colorado Boulder",
+      "date": "Oct 2024",
+      "credentialId": "RDZCE583Z0FZ",
+      "image": "path/to/university-colorado-boulder-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Foundations of Cybersecurity",
+      "issuer": "Google",
+      "date": "Oct 2024",
+      "credentialId": "04Q6LKOVD301",
+      "image": "path/to/google-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Java Testing Specialization",
+      "issuer": "LearnQuest",
+      "date": "Oct 2024",
+      "credentialId": "615TZEO7VBK7",
+      "image": "path/to/learnquest-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Play It Safe: Manage Security Risks",
+      "issuer": "Google",
+      "date": "Oct 2024",
+      "credentialId": "H0KI9JHFP3CB",
+      "image": "path/to/google-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Understanding Research Methods",
+      "issuer": "University of London",
+      "date": "Oct 2024",
+      "credentialId": "MS7S4M670SYH",
+      "image": "path/to/university-of-london-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Parameterized and Dynamic Testing in JUnit",
+      "issuer": "LearnQuest",
+      "date": "May 2024",
+      "credentialId": "Y8FDBA38RA7J",
+      "image": "path/to/learnquest-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Performance Testing with JMeter for Absolute Beginners",
+      "issuer": "Coursera",
+      "date": "May 2024",
+      "credentialId": "A3VT7UKJD6BB",
+      "image": "path/to/coursera-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Create Your First Automation Script Using Selenium and Java",
+      "issuer": "Coursera",
+      "date": "Mar 2024",
+      "credentialId": "YEXXL9929ANB",
+      "image": "path/to/coursera-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Ethics, Technology and Engineering",
+      "issuer": "Eindhoven University of Technology",
+      "date": "Mar 2024",
+      "credentialId": "KUYWZCMV72QR",
+      "image": "path/to/eindhoven-university-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Java Testing: An Introduction to TDD",
+      "issuer": "LearnQuest",
+      "date": "Mar 2024",
+      "credentialId": "CEPSNW7D5TMD",
+      "image": "path/to/learnquest-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Mocking with JUnit",
+      "issuer": "LearnQuest",
+      "date": "Mar 2024",
+      "credentialId": "R7BKHRWPAM27",
+      "image": "path/to/learnquest-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Excel Fundamentals – Formulas for Finance",
+      "issuer": "Corporate Finance Institute® (CFI)",
+      "date": "Oct 2023",
+      "credentialId": "83558485",
+      "image": "path/to/cfi-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Programming Fundamentals in Kotlin",
+      "issuer": "Meta",
+      "date": "Apr 2023",
+      "credentialId": "XSF2LZUERJ4K",
+      "image": "path/to/meta-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Introduction to Android Mobile Application Development",
+      "issuer": "Meta",
+      "date": "Mar 2023",
+      "credentialId": "ADFTAQHHXW39",
+      "image": "path/to/meta-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Determine Shortest Paths Between Routers Using Python",
+      "issuer": "Coursera",
+      "date": "Mar 2023",
+      "credentialId": "8ZDNZV4QUD3J",
+      "image": "path/to/coursera-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Introduction to Agile Development and Scrum (avec mention)",
+      "issuer": "IBM",
+      "date": "Feb 2023",
+      "credentialId": "V4QDS7NCE2TW",
+      "image": "path/to/ibm-logo.png",
+      "skills": ["Scrum", "Agile Methodologies"]
+    },
+    {
+      "title": "React Native",
+      "issuer": "Meta",
+      "date": "Feb 2023",
+      "credentialId": "L636S97YPGKY",
+      "image": "path/to/meta-logo.png",
+      "skills": ["React.js", "Node.js"]
+    },
+    {
+      "title": "Business Model Canvas: A Tool for Entrepreneurs and Innovators (Project-Centered Course)",
+      "issuer": "Kennesaw State University",
+      "date": "Nov 2022",
+      "credentialId": "WDNKQAX2HA95",
+      "image": "path/to/kennesaw-state-university-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Create Your First NoSQL Database with MongoDB and Compass",
+      "issuer": "Coursera",
+      "date": "Nov 2022",
+      "credentialId": "268H3XXM3H9M",
+      "image": "path/to/coursera-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Learn Fundamentals Of Computer Programming With C Language",
+      "issuer": "Coursera",
+      "date": "Nov 2022",
+      "credentialId": "9STFVL5WWZ62",
+      "image": "path/to/coursera-logo.png",
+      "skills": []
+    },
+    {
+      "title": "Command Line in Linux",
+      "issuer": "Coursera",
+      "date": "Oct 2022",
+      "credentialId": "EDXD65NJ3TK9",
+      "image": "path/to/coursera-logo.png",
+      "skills": []
+    }
+  ]
+}

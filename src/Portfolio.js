@@ -103,9 +103,9 @@ const AboutSection = () => {
         <div className="space-y-6">
           <p className="text-gray-600 leading-relaxed">
             I am a cybersecurity engineer with a strong software background. I
-            secure systems end-to-end covering application security, cloud
+            secure systems end to end covering application security, cloud
             security, and secure engineering practices with a particular
-            interest in AI security and the safety of model-driven products.
+            interest in AI security and the safety of model driven products.
             My approach blends threat modeling, secure by design architecture,
             and practical red-teaming of modern systems.
           </p>
@@ -310,8 +310,8 @@ const Header = () => {
 
             <p className="text-gray-300 text-lg leading-relaxed">
               I secure modern software and cloud systems, with a strong
-              software-engineering foundation. My work spans application
-              security, infrastructure hardening, and secure delivery—plus a
+              software engineering foundation. My work spans application
+              security, infrastructure hardening, and secure delivery plus a
               preference for AI/ML security where models and safety intersect.
             </p>
 

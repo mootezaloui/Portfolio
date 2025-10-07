@@ -25,6 +25,7 @@ import {
   Lock,
   Bot,
   Infinity,
+  
 } from "lucide-react";
 
 import SkillsSection from "./components/Skills";
@@ -35,8 +36,6 @@ import CertificationsSection from "./components/Certifications";
 
 import ProfilePic from "./assets/ProfilePic.png";
 
-
-// Add StatCard component from the new code
 const StatCard = ({ icon: Icon, value, label }) => (
   <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
     <div className="flex items-center gap-4">
@@ -51,7 +50,6 @@ const StatCard = ({ icon: Icon, value, label }) => (
   </div>
 );
 
-// Add TabButton component
 const TabButton = ({ active, children, onClick }) => (
   <button
     onClick={onClick}
@@ -66,14 +64,10 @@ const TabButton = ({ active, children, onClick }) => (
 );
 
 const handleResumeDownload = () => {
-  // Direct path to the resume file in public folder
   const resumePath = "./assets/Mootez_Aloui_Resume_EN.pdf";
-
   fetch(resumePath)
     .then((response) => {
-      if (!response.ok) {
-        throw new Error("Resume file not found");
-      }
+      if (!response.ok) throw new Error("Resume file not found");
       return response.blob();
     })
     .then((blob) => {
@@ -81,13 +75,9 @@ const handleResumeDownload = () => {
       const link = document.createElement("a");
       link.href = blobUrl;
       link.download = "Mootez_Aloui_Resume_EN.pdf";
-
-      // Trigger download
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-
-      // Cleanup
       window.URL.revokeObjectURL(blobUrl);
     })
     .catch((error) => {
@@ -96,7 +86,6 @@ const handleResumeDownload = () => {
     });
 };
 
-// Modified AboutSection component to match your styling
 const AboutSection = () => {
   const [activeTab, setActiveTab] = useState("background");
 
@@ -113,64 +102,52 @@ const AboutSection = () => {
       content: (
         <div className="space-y-6">
           <p className="text-gray-600 leading-relaxed">
-            As a passionate software engineer currently pursuing my degree at
-            the Mediterranean Institute of Technology (MedTech), I have
-            developed a strong foundation in full-stack development with a keen
-            interest in AI, cloud computing, and cybersecurity. My journey in
-            technology is driven by a desire to create innovative solutions that
-            enhance security and leverage the power of the cloud.
+            I am a cybersecurity engineer with a strong software background. I
+            secure systems end-to-end covering application security, cloud
+            security, and secure engineering practices with a particular
+            interest in AI security and the safety of model-driven products.
+            My approach blends threat modeling, secure by design architecture,
+            and practical red-teaming of modern systems.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <GraduationCap className="w-5 h-5 text-blue-600" />
-                <span className="font-medium">
-                  Software Engineering Student
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Terminal className="w-5 h-5 text-blue-600" />
-                <span className="font-medium">Full Stack Developer</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Award className="w-5 h-5 text-blue-600" />
-                <span className="font-medium">Multiple Project Awards</span>
+                <span className="font-medium">Software Engineering (MedTech)</span>
               </div>
               <div className="flex items-center gap-3">
                 <Shield className="w-5 h-5 text-blue-600" />
-                <span className="font-medium">Cybersecurity Enthusiast</span>
+                <span className="font-medium">Cybersecurity Engineer</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Brain className="w-5 h-5 text-blue-600" />
+                <span className="font-medium">AI/ML Security (preference)</span>
               </div>
               <div className="flex items-center gap-3">
                 <Cloud className="w-5 h-5 text-blue-600" />
-                <span className="font-medium">Cloud Computing Advocate</span>
+                <span className="font-medium">Cloud & Infrastructure Security</span>
               </div>
               <div className="flex items-center gap-3">
-                <Lightbulb className="w-5 h-5 text-blue-600" />
-                <span className="font-medium">Innovative Problem Solver</span>
+                <Award className="w-5 h-5 text-blue-600" />
+                <span className="font-medium">Project & Research Awards</span>
               </div>
               <div className="flex items-center gap-3">
                 <Users className="w-5 h-5 text-blue-600" />
-                <span className="font-medium">
-                  Team Collaboration Experience
-                </span>
+                <span className="font-medium">Collaborative & Reliable</span>
               </div>
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <Briefcase className="w-5 h-5 text-blue-600" />
-                <span className="font-medium">Freelance Experience</span>
+                <Terminal className="w-5 h-5 text-blue-600" />
+                <span className="font-medium">Secure Coding & Reviews</span>
               </div>
               <div className="flex items-center gap-3">
                 <Rocket className="w-5 h-5 text-blue-600" />
-                <span className="font-medium">
-                  AI and Machine Learning Projects
-                </span>
+                <span className="font-medium">Operationalizing Security</span>
               </div>
               <div className="flex items-center gap-3">
                 <PuzzleIcon className="w-5 h-5 text-blue-600" />
-                <span className="font-medium">
-                  Passionate About Problem-Solving
-                </span>
+                <span className="font-medium">Pragmatic Problem-Solving</span>
               </div>
             </div>
           </div>
@@ -185,8 +162,7 @@ const AboutSection = () => {
             <div className="space-y-4">
               <h3 className="font-semibold text-gray-900">Get in touch</h3>
               <p className="text-gray-600">
-                Feel free to reach out for collaborations or just a friendly
-                hello
+                Open to collaborations and meaningful security work.
               </p>
               <div className="space-y-4">
                 <a
@@ -210,8 +186,8 @@ const AboutSection = () => {
             <div className="space-y-4">
               <h3 className="font-semibold text-gray-900">Current Status</h3>
               <p className="text-gray-600">
-                Available for full-time positions and interesting projects in
-                AI, cloud computing, and cybersecurity
+                Available for full-time cybersecurity roles (AppSec, Cloud
+                Security, AI/ML Security) and impactful engineering projects.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button
@@ -235,19 +211,16 @@ const AboutSection = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">About Me</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Building digital solutions with a focus on user experience and
-              scalable architecture
+              Securing software and cloud systems with a pragmatic, engineering-first mindset.
             </p>
           </div>
 
-          {/* Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             {stats.map((stat, index) => (
               <StatCard key={index} {...stat} />
             ))}
           </div>
 
-          {/* Tabs */}
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <div className="flex flex-wrap gap-4 mb-8">
               {Object.entries(tabs).map(([key, { title }]) => (
@@ -268,6 +241,7 @@ const AboutSection = () => {
     </AnimatedSection>
   );
 };
+
 const TypewriterText = ({ text, delay = 100 }) => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -297,14 +271,13 @@ const Header = () => {
   }, []);
 
   const skills = [
-    { icon: <Terminal className="w-5 h-5" />, text: "Full Stack Development" },
-    { icon: <Code className="w-5 h-5" />, text: "Clean Architecture" },
-    { icon: <Server className="w-5 h-5" />, text: "Cloud Solutions" },
+    { icon: <Shield className="w-5 h-5" />, text: "Threat Modeling" },
+    { icon: <Lock className="w-5 h-5" />, text: "Secure Coding & Reviews" },
+    { icon: <Cloud className="w-5 h-5" />, text: "Cloud Security" },
   ];
 
   return (
     <header className="relative min-h-screen flex flex-col justify-center bg-gray-900 text-white overflow-hidden">
-      {/* Animated Background */}
       <div className="absolute inset-0">
         <div
           className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/50 to-gray-900"
@@ -315,15 +288,11 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Content Container */}
       <div className="relative z-10 container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
           <div
             className={`space-y-6 transition-all duration-1000 ${
-              isVisible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 -translate-x-10"
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
             }`}
           >
             <div className="space-y-2">
@@ -334,19 +303,18 @@ const Header = () => {
                 Mootez Aloui
               </h1>
               <div className="flex items-center space-x-2 text-xl text-gray-300">
-                <span className="font-medium">Software Engineer</span>
+                <span className="font-medium">Cybersecurity Engineer</span>
                 <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
               </div>
             </div>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              Passionate about crafting elegant solutions to complex problems.
-              Specializing in full-stack development with a focus on scalable
-              and maintainable applications, particularly in AI, cloud
-              computing, and cybersecurity.
+              I secure modern software and cloud systems, with a strong
+              software-engineering foundation. My work spans application
+              security, infrastructure hardening, and secure delivery—plus a
+              preference for AI/ML security where models and safety intersect.
             </p>
 
-            {/* Skills */}
             <div className="flex flex-wrap gap-4">
               {skills.map((skill, index) => (
                 <div
@@ -358,30 +326,15 @@ const Header = () => {
                 </div>
               ))}
               <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">
-                <Cloud className="w-5 h-5 text-blue-600" />
-                <span className="text-sm font-medium">Cloud Solutions</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">
                 <Infinity className="w-5 h-5 text-blue-600" />
-                <span className="text-sm font-medium">DevOps</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">
-                <Lock className="w-5 h-5 text-blue-600" />
-                <span className="text-sm font-medium">
-                  Cybersecurity Practices
-                </span>
+                <span className="text-sm font-medium">DevOps & Pipelines</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">
                 <Bot className="w-5 h-5 text-blue-600" />
-                <span className="text-sm font-medium">AI Development</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">
-                <Brain className="w-5 h-5 text-blue-600" />
-                <span className="text-sm font-medium">Machine Learning</span>
+                <span className="text-sm font-medium">AI Security (Preference)</span>
               </div>
             </div>
 
-            {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
               <a
                 href="./assets/Mootez_Aloui_Resume_EN.pdf"
@@ -417,29 +370,21 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Right Column - Profile Image */}
           <div
             className={`relative transition-all duration-1000 ${
-              isVisible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-10"
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
             }`}
           >
             <div className="relative w-64 h-64 mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse filter blur-xl opacity-50" />
               <div className="relative rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
-                <img
-                  src={ProfilePic}
-                  alt="Mootez Aloui"
-                  className="w-full h-full object-cover"
-                />
+                <img src={ProfilePic} alt="Mootez Aloui" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ChevronDown className="w-6 h-6" />
       </div>
@@ -447,27 +392,18 @@ const Header = () => {
   );
 };
 
-// Animated Section Component
 const AnimatedSection = ({ children, className = "" }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [elementRef, setElementRef] = useState(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
-      },
+      ([entry]) => setIsVisible(entry.isIntersecting),
       { threshold: 0.1 }
     );
-
-    if (elementRef) {
-      observer.observe(elementRef);
-    }
-
+    if (elementRef) observer.observe(elementRef);
     return () => {
-      if (elementRef) {
-        observer.unobserve(elementRef);
-      }
+      if (elementRef) observer.unobserve(elementRef);
     };
   }, [elementRef]);
 
@@ -483,35 +419,32 @@ const AnimatedSection = ({ children, className = "" }) => {
   );
 };
 
-
-// Main Portfolio Component
 const Portfolio = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <AboutSection />
       <AnimatedSection>
-      <ProjectsSection />
+        <ProjectsSection />
       </AnimatedSection>
       <AnimatedSection>
-      <ExperienceSection />
+        <ExperienceSection />
       </AnimatedSection>
       <AnimatedSection>
-      <SkillsSection />
+        <SkillsSection />
       </AnimatedSection>
       <AnimatedSection>
-      <CertificationsSection />
+        <CertificationsSection />
       </AnimatedSection>
       <AnimatedSection>
-      <ContributionsSection/>
+        <ContributionsSection />
       </AnimatedSection>
       <AnimatedSection>
         <section className="py-20 px-8 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
             <p className="mb-8">
-              Currently available for software engineering positions and
-              interesting projects.
+              Currently available for cybersecurity engineering roles and impactful projects.
             </p>
             <a
               href="mailto:Mootez.aloui@medtech.tn"

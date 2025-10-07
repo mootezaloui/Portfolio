@@ -5,9 +5,10 @@ import projectsData from '../data/projects.json'
 // Import images
 import slackAppImage from '../assets/Project1.png';
 import AI_ChatBot from '../assets/Project AI.jpg';
-import Avocat_Dashboard from '../assets/Project Avocat2.png';
+import Avocat_Dashboard from '../assets/Project Avocat.png';
 import Tutoring_Project from '../assets/Tutoring_Project.png';
 import Graph_project from '../assets/ProjectGraph.png';
+import PrompTrend from '../assets/PrrompTrend.png';
 
 // Mapping project names to imported images
 const imageMapping = {
@@ -16,6 +17,7 @@ const imageMapping = {
   'Avocat_Dashboard': Avocat_Dashboard,
   'slackAppImage': slackAppImage,
   'Tutoring_Project': Tutoring_Project,
+  'PrompTrend' : PrompTrend,
 };
 
 // ProjectCard Component

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Code, Server, Brain, Globe, Briefcase, Users } from "lucide-react";
+import { Code, Server, Brain, Globe, Briefcase, Users, Cloud, Shield } from "lucide-react";
 import skillsData from "../data/skills.json";
 
 const iconMap = {
@@ -9,6 +9,8 @@ const iconMap = {
   Briefcase: Briefcase,
   Users: Users,
   Brain: Brain,
+  Shield: Shield,
+  Cloud: Cloud,
 };
 
 const skillCategories = skillsData.skillCategories.map((category) => ({

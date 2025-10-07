@@ -1,79 +1,87 @@
 {
-    "experiences": [
-      {
-        "title": "Software Engineer Intern",
-        "company": "RedStart",
-        "period": "May 2024 - Present",
-        "achievements": [
-          "Engineered and deployed a web application with integrated cyber security and AI features, enhancing data protection for over 500 users.",
-          "Boosted system reliability by 20% through innovative cloud computing solutions using Python, Django, and AWS.",
-          "Led a collaborative effort to optimize backend services with Docker, resulting in a more secure and efficient system."
-        ]
-      },
-      {
-        "title": "Freelancer",
-        "company": "Law Firm",
-        "period": "June 2022 - Jan 2024",
-        "achievements": [
-          "Developed management software using Node.js and MongoDB that reduced legal file processing time by 40%, significantly improving efficiency.",
-          "Increased client satisfaction by 30% by creating a user-friendly interface and providing ongoing compliance support.",
-          "Integrated Express.js for smooth data flow and enhanced user experience across the platform."
-        ]
-      },
-      {
-        "title": "Junior Student Intern",
-        "company": "Carrier",
-        "period": "Summer 2022",
-        "achievements": [
-          "Contributed to the design and testing of HVAC systems using AutoCAD and MATLAB, gaining practical engineering experience.",
-          "Supported optimization efforts in system design, reducing production times by 15%."
-        ]
-      },
-      {
-        "title": "Apple Developer & Tester",
-        "company": "Apple",
-        "period": "Sept 2021 - Present",
-        "achievements": [
-          "Optimized iOS to enhance user experience and performance, leading to increased user engagement.",
-          "Collaborated with global teams to ensure high code quality and seamless feature launches using Swift and Xcode."
-        ]
-      },
-      {
-        "title": "Library Officer",
-        "company": "SMU",
-        "period": "Sept 2021 - Present",
-        "achievements": [
-          "Organized academic events and streamlined resource management, increasing student engagement by 25%.",
-          "Implemented digital systems that improved library service efficiency by 20%."
-        ]
-      },
-      {
-        "title": "Sponsoring Manager",
-        "company": "IEEE SMU Student Branch",
-        "period": "Dec 2020 - Dec 2022",
-        "achievements": [
-          "Led a team of 15, securing over $10,000 in sponsorship and organizing conferences that boosted technical skills and networking opportunities for students.",
-          "Implemented effective fundraising strategies, surpassing financial targets by 15%."
-        ]
-      },
-      {
-        "title": "Member",
-        "company": "Tunis Mediterranean Rotaract",
-        "period": "Mar 2020 - Nov 2023",
-        "achievements": [
-          "Contributed to over 10 humanitarian projects, positively impacting over 200 individuals through community development initiatives.",
-          "Led efforts in service projects, enhancing the organization's impact on local communities."
-        ]
-      },
-      {
-        "title": "Admission's Officer Intern",
-        "company": "SMU",
-        "period": "Summer 2021",
-        "achievements": [
-          "Supported the recruitment and onboarding processes, leading to a 15% increase in student applications.",
-          "Streamlined administrative workflows using CRM software and MS Office, improving operational efficiency by 20%."
-        ]
-      }
-    ]
-  }
-  
+  "experiences": [
+    {
+      "title": "Cybersecurity & AI Engineer Intern",
+      "company": "Datadoit",
+      "period": "Jan 2025 – June 2025",
+      "achievements": [
+        "Designed and implemented PrompTrend — a continuous vulnerability discovery and risk scoring system for Large Language Models (LLMs).",
+        "Performed adversarial testing and security evaluation of black-box LLM APIs to detect jailbreaks, prompt injections, and model misuse.",
+        "Published research paper “PrompTrend: Continuous Community-Driven Vulnerability Discovery and Assessment for Large Language Models” (arXiv 2025), adopted by security researchers for ongoing AI model risk assessment."
+      ]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "RedStart",
+      "period": "Summer 2024",
+      "achievements": [
+        "Conducted penetration testing on a cloud-hosted web application, verified data integrity, and strengthened application security controls.",
+        "Deployed the application securely to the cloud and integrated a machine-learning model for email generation using TensorFlow.",
+        "Contributed to secure backend architecture and CI/CD practices."
+      ]
+    },
+    {
+      "title": "Freelancer",
+      "company": "Multiple Clients",
+      "period": "Summer 2023",
+      "achievements": [
+        "Designed and deployed secure web applications for document classification using Python, Scikit-Learn, and React — reducing manual sorting time by 50%.",
+        "Integrated machine learning models safely into production React environments with API hardening and secure data handling."
+      ]
+    },
+    {
+      "title": "Junior Student Intern",
+      "company": "Carrier",
+      "period": "Summer 2022",
+      "achievements": [
+        "Supported system design improvements and performed data analysis and simulations to optimize HVAC systems.",
+        "Contributed to engineering validation practices and process optimization."
+      ]
+    },
+    {
+      "title": "Apple Developer & Tester",
+      "company": "Apple",
+      "period": "Sept 2021 – Present",
+      "achievements": [
+        "Member of Apple’s iOS beta testing program, focusing on stability, privacy, and security of AI-driven features.",
+        "Worked with CoreML integrations to validate secure machine learning behavior on iOS."
+      ]
+    },
+    {
+      "title": "Library Officer",
+      "company": "SMU",
+      "period": "Sept 2021 – Present",
+      "achievements": [
+        "Digitized and streamlined library resource management, increasing operational efficiency by 20%.",
+        "Organized academic and technical events to boost student engagement by 25%."
+      ]
+    },
+    {
+      "title": "Sponsoring Manager",
+      "company": "IEEE SMU Student Branch",
+      "period": "Dec 2020 – Dec 2022",
+      "achievements": [
+        "Led a 15-member sponsorship team, securing over $10,000 in funding and organizing technical conferences for students.",
+        "Implemented structured fundraising and partnership strategies, exceeding financial targets by 15%."
+      ]
+    },
+    {
+      "title": "Member",
+      "company": "Tunis Mediterranean Rotaract",
+      "period": "Mar 2020 – Nov 2023",
+      "achievements": [
+        "Contributed to 10+ humanitarian and technology-driven community projects impacting 200+ people.",
+        "Helped coordinate service initiatives to strengthen local community development."
+      ]
+    },
+    {
+      "title": "Admissions Officer Intern",
+      "company": "SMU",
+      "period": "Summer 2021",
+      "achievements": [
+        "Supported student recruitment and onboarding workflows, contributing to a 15% rise in applications.",
+        "Optimized administrative processes with CRM and MS Office, improving operational efficiency by 20%."
+      ]
+    }
+  ]
+}

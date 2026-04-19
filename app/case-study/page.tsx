@@ -94,12 +94,14 @@ Request -> middleware.ts
             low confidence    -> normal human experience
 `.trim();
 
+const isPagesBuild = process.env.GITHUB_PAGES === "true";
+
 interface CaseStudyPageProps {
   searchParams: Promise<{ lens?: string | string[] }>;
 }
 
 export default async function CaseStudyPage({ searchParams }: CaseStudyPageProps) {
-  const lens = getLensFromSearchParams(await searchParams);
+  const lens = getLensFromSearchParams(isPagesBuild ? {} : await searchParams);
   const locale = await getLocale();
   const lensDefinition = getRoleLensDefinition(lens, locale);
   const dict = getDictionary(locale).caseStudy;

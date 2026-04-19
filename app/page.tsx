@@ -40,6 +40,8 @@ import {
   type HomeTab,
 } from "@/lib/navigation/homeTabs";
 
+const isPagesBuild = process.env.GITHUB_PAGES === "true";
+
 interface HomePageProps {
   searchParams: Promise<{
     lens?: string | string[];
@@ -48,7 +50,7 @@ interface HomePageProps {
 }
 
 export default async function Home({ searchParams }: HomePageProps) {
-  const resolvedSearchParams = await searchParams;
+  const resolvedSearchParams = isPagesBuild ? {} : await searchParams;
   const lens = getLensFromSearchParams(resolvedSearchParams);
   const activeTab = getHomeTabFromSearchParams(resolvedSearchParams);
   const locale = await getLocale();

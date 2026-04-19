@@ -18,14 +18,12 @@ export const metadata: Metadata = {
   },
 };
 
-const isPagesBuild = process.env.GITHUB_PAGES === "true";
-
 interface AgentPageProps {
   searchParams: Promise<{ lens?: string | string[] }>;
 }
 
 export default async function AgentPage({ searchParams }: AgentPageProps) {
-  const lens = getLensFromSearchParams(isPagesBuild ? {} : await searchParams);
+  const lens = getLensFromSearchParams(await searchParams);
   const lensDefinition = getRoleLensDefinition(lens, "en");
   const { profile, projects, certifications } = buildAgentLandingSections(lens);
   const verdict = buildAgentVerdict(lens);

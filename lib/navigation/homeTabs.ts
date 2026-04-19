@@ -1,5 +1,4 @@
 import type { RoleLens } from "../lens/roleLens";
-import { IS_STATIC_EXPORT } from "../site/runtime";
 
 export const HOME_TABS = [
   "why-me",
@@ -32,18 +31,7 @@ export function getHomeTabFromSearchParams(searchParams: {
   return parseHomeTab(rawTab);
 }
 
-export function buildHomeTabHashHref(tab: HomeTab): string {
-  return `#${tab}`;
-}
-
 export function buildHomeTabHref(tab: HomeTab, lens: RoleLens): string {
-  if (IS_STATIC_EXPORT) {
-    if (tab === DEFAULT_HOME_TAB) {
-      return "/#why-me";
-    }
-    return `/#${tab}`;
-  }
-
   const params = new URLSearchParams();
 
   if (lens !== "general") {

@@ -53,3 +53,5 @@ next-env.d.ts
 .vscode/
 .pages-build-manifest.json
 *.pages-disabled
+
+.vercel

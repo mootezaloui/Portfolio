@@ -1,6 +1,5 @@
 import { LensContextBanner } from "@/components/lens/LensContextBanner";
 import { LensSelector } from "@/components/lens/LensSelector";
-import { HomeRail } from "@/components/home/HomeRail";
 import { HomeTabPanels } from "@/components/home/HomeTabPanels";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -42,8 +41,6 @@ import {
   type HomeTab,
 } from "@/lib/navigation/homeTabs";
 
-const isPagesBuild = process.env.GITHUB_PAGES === "true";
-
 interface HomePageProps {
   searchParams: Promise<{
     lens?: string | string[];
@@ -52,7 +49,7 @@ interface HomePageProps {
 }
 
 export default async function Home({ searchParams }: HomePageProps) {
-  const resolvedSearchParams = isPagesBuild ? {} : await searchParams;
+  const resolvedSearchParams = await searchParams;
   const lens = getLensFromSearchParams(resolvedSearchParams);
   const activeTab = getHomeTabFromSearchParams(resolvedSearchParams);
   const locale = await getLocale();
@@ -211,31 +208,17 @@ export default async function Home({ searchParams }: HomePageProps) {
           className="fixed top-32 z-20 hidden w-52 min-[1660px]:block"
           style={{ left: "calc((100vw - 72rem) / 2 - 13rem)" }}
         >
-          {isPagesBuild ? (
-            <HomeRail
-              title={dict.nav.onThisPage}
-              baseItem={baseOverviewItem}
-              itemsByTab={onPageItemsByTab}
-              initialTab={activeTab}
-            />
-          ) : (
-            <OnThisPageRail title={dict.nav.onThisPage} items={onPageItems} />
-          )}
+          <OnThisPageRail title={dict.nav.onThisPage} items={onPageItems} />
         </aside>
         <Hero profile={profile} lens={lens} locale={locale} />
-        {!isPagesBuild ? (
-          <>
-            <LensSelector
-              currentLens={lens}
-              basePath={buildHomeTabHref(activeTab, "general")}
-              locale={locale}
-            />
-            <LensContextBanner lens={lens} locale={locale} />
-          </>
-        ) : null}
+        <LensSelector
+          currentLens={lens}
+          basePath={buildHomeTabHref(activeTab, "general")}
+          locale={locale}
+        />
+        <LensContextBanner lens={lens} locale={locale} />
         <HomeTabPanels
-          initialTab={activeTab}
-          useHashNavigation={isPagesBuild}
+          activeTab={activeTab}
           whyMe={
             <>
               <About profile={profile} lens={lens} locale={locale} />

@@ -93,7 +93,7 @@ const AGENT_LOCALE = "en" as const;
 
 function getCanonicalUrl(): string {
   const profile = getProfile(AGENT_LOCALE);
-  return profile.contact.website ?? "https://tazou-runtime.vercel.app";
+  return profile.contact.website ?? "https://portfolio-sooty-three-22.vercel.app";
 }
 
 function buildLensSummaryFocus(lens: RoleLens): string {

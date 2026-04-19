@@ -8,8 +8,6 @@ import { getDictionary } from "@/lib/i18n/dictionary";
 import { getLocale } from "@/lib/i18n/getLocale";
 import { buildLensHref, getLensFromSearchParams } from "@/lib/lens/roleLens";
 
-const isPagesBuild = process.env.GITHUB_PAGES === "true";
-
 interface TwinConversationPageProps {
   params: Promise<{ conversation?: string[] }>;
   searchParams: Promise<{ snapshot?: string; lens?: string | string[] }>;
@@ -24,7 +22,7 @@ export default async function TwinConversationPage({
   searchParams,
 }: TwinConversationPageProps) {
   const { conversation } = await params;
-  const resolvedSearchParams = isPagesBuild ? {} : await searchParams;
+  const resolvedSearchParams = await searchParams;
   const { snapshot } = resolvedSearchParams;
   const lens = getLensFromSearchParams(resolvedSearchParams);
   const locale = await getLocale();

@@ -5,7 +5,6 @@ import type {
   SkillCategory,
 } from "@/lib/content/schemas";
 import type { Locale } from "@/lib/i18n/config";
-import { IS_STATIC_EXPORT } from "../site/runtime";
 
 export const ROLE_LENSES = [
   "general",
@@ -707,7 +706,7 @@ export function getLensFromSearchParams(searchParams: {
 }
 
 export function buildLensHref(path: string, lens: RoleLens): string {
-  if (lens === "general" || IS_STATIC_EXPORT) {
+  if (lens === "general") {
     return path;
   }
 

@@ -17,8 +17,6 @@ import { buildProjectJsonLd } from "@/lib/agents/profile";
 import { ProjectHeroImage } from "@/components/projects/ProjectHeroImage";
 import { withBasePath } from "@/lib/site/runtime";
 
-const isPagesBuild = process.env.GITHUB_PAGES === "true";
-
 interface ProjectPageProps {
   params: Promise<{ slug: string }>;
   searchParams: Promise<{ lens?: string | string[] }>;
@@ -72,7 +70,7 @@ export default async function ProjectPage({
   searchParams,
 }: ProjectPageProps) {
   const { slug } = await params;
-  const lens = getLensFromSearchParams(isPagesBuild ? {} : await searchParams);
+  const lens = getLensFromSearchParams(await searchParams);
   const locale = await getLocale();
   const lensDefinition = getRoleLensDefinition(lens, locale);
   const project = getProjectBySlug(slug, locale);

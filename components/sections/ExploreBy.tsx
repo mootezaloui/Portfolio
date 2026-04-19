@@ -5,7 +5,8 @@ import { ArrowRight, FileCode2, MessageSquare, Microscope, Timer } from "lucide-
 import type { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionary";
 import { buildLensHref, type RoleLens } from "@/lib/lens/roleLens";
-import { buildHomeTabHref } from "@/lib/navigation/homeTabs";
+import { buildHomeTabHashHref, buildHomeTabHref } from "@/lib/navigation/homeTabs";
+import { IS_STATIC_EXPORT } from "@/lib/site/runtime";
 
 interface ExploreByProps {
   lens: RoleLens;
@@ -20,7 +21,9 @@ export function ExploreBy({ lens, locale }: ExploreByProps) {
       subtitle: dict.fastOverviewSubtitle,
       description: dict.fastOverviewDescription,
       icon: Timer,
-      href: buildHomeTabHref("why-me", lens),
+      href: IS_STATIC_EXPORT
+        ? buildHomeTabHashHref("why-me")
+        : buildHomeTabHref("why-me", lens),
       cta: dict.fastOverviewCta,
     },
     {
@@ -28,7 +31,9 @@ export function ExploreBy({ lens, locale }: ExploreByProps) {
       subtitle: dict.deepDiveSubtitle,
       description: dict.deepDiveDescription,
       icon: Microscope,
-      href: buildHomeTabHref("projects", lens),
+      href: IS_STATIC_EXPORT
+        ? buildHomeTabHashHref("projects")
+        : buildHomeTabHref("projects", lens),
       cta: dict.deepDiveCta,
     },
     {
@@ -82,7 +87,12 @@ export function ExploreBy({ lens, locale }: ExploreByProps) {
             </>
           );
 
-          return (
+          const isHashHref = path.href.startsWith("#");
+          return isHashHref ? (
+            <a key={path.title} href={path.href} className={cardClasses}>
+              {content}
+            </a>
+          ) : (
             <Link key={path.title} href={path.href as Route} className={cardClasses}>
               {content}
             </Link>

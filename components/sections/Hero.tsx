@@ -13,7 +13,7 @@ import {
 } from "@/lib/lens/roleLens";
 import { getResumeDownloadName, getResumeHref } from "@/lib/lens/resume";
 import { buildHomeTabHref } from "@/lib/navigation/homeTabs";
-import { withBasePath } from "@/lib/site/runtime";
+import { IS_STATIC_EXPORT, withBasePath } from "@/lib/site/runtime";
 
 interface HeroProps {
   profile: Profile;
@@ -48,13 +48,23 @@ export function Hero({ profile, lens, locale }: HeroProps) {
             {positioning}
           </p>
           <div className="mt-2 flex flex-wrap gap-3">
-            <Link
-              href={buildHomeTabHref("why-me", lens) as Route}
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition hover:opacity-90"
-            >
-              {dict.whyMe}
-              <ArrowRight className="h-4 w-4" />
-            </Link>
+            {IS_STATIC_EXPORT ? (
+              <a
+                href="#why-me"
+                className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition hover:opacity-90"
+              >
+                {dict.whyMe}
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            ) : (
+              <Link
+                href={buildHomeTabHref("why-me", lens) as Route}
+                className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition hover:opacity-90"
+              >
+                {dict.whyMe}
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            )}
             <Link
               href={buildLensHref("/twin", lens) as Route}
               data-mascot-anchor="twin_entry_button_hero"

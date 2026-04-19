@@ -1,0 +1,88 @@
+{
+  "categories": [
+    {
+      "id": "languages",
+      "title": { "en": "Programming Languages", "fr": "Langages de programmation" },
+      "icon": "Code",
+      "skills": [
+        { "name": "Python", "level": 90, "years": 3, "evidence": ["promptrend-llm-vulnerability-discovery", "equation-solver-chatbot", "virus-propagation-simulation"] },
+        { "name": "JavaScript", "level": 85, "years": 2, "evidence": ["messenger-live-messaging", "law-firm-management-software"] },
+        { "name": "TypeScript", "level": 75, "years": 1, "evidence": ["promptrend-llm-vulnerability-discovery"] },
+        { "name": "Java", "level": 70, "years": 2 },
+        { "name": "SQL", "level": 80, "years": 2, "evidence": ["tutoring-applications", "law-firm-management-software"] }
+      ]
+    },
+    {
+      "id": "security",
+      "title": { "en": "Cybersecurity", "fr": "Cybersécurité" },
+      "icon": "Shield",
+      "skills": [
+        { "name": "Vulnerability Assessment", "level": 85, "years": 2, "evidence": ["promptrend-llm-vulnerability-discovery"] },
+        { "name": "Penetration Testing", "level": 80, "years": 2, "evidence": ["law-firm-management-software"] },
+        { "name": "Secure Coding and Code Review", "level": 85, "years": 3, "evidence": ["law-firm-management-software", "tutoring-applications"] },
+        { "name": "OWASP Practices", "level": 80, "years": 2 },
+        { "name": "Threat Modeling", "level": 75, "years": 2, "evidence": ["promptrend-llm-vulnerability-discovery"] }
+      ]
+    },
+    {
+      "id": "cloud",
+      "title": { "en": "Cloud and DevOps", "fr": "Cloud et DevOps" },
+      "icon": "Cloud",
+      "skills": [
+        { "name": "Docker", "level": 80, "years": 2, "evidence": ["promptrend-llm-vulnerability-discovery", "equation-solver-chatbot"] },
+        { "name": "AWS", "level": 70, "years": 1 },
+        { "name": "Azure", "level": 70, "years": 1, "evidence": ["promptrend-llm-vulnerability-discovery"] },
+        { "name": "CI/CD", "level": 80, "years": 2 },
+        { "name": "Linux and Bash", "level": 85, "years": 3 }
+      ]
+    },
+    {
+      "id": "backend",
+      "title": { "en": "Backend Development", "fr": "Développement back-end" },
+      "icon": "Server",
+      "skills": [
+        { "name": "Node.js", "level": 80, "years": 2, "evidence": ["messenger-live-messaging", "law-firm-management-software", "tutoring-applications"] },
+        { "name": "Express.js", "level": 85, "years": 2, "evidence": ["law-firm-management-software", "tutoring-applications"] },
+        { "name": "REST APIs", "level": 85, "years": 2, "evidence": ["law-firm-management-software", "tutoring-applications"] },
+        { "name": "MongoDB", "level": 75, "years": 2, "evidence": ["messenger-live-messaging", "law-firm-management-software"] },
+        { "name": "PostgreSQL", "level": 70, "years": 1 }
+      ]
+    },
+    {
+      "id": "frontend",
+      "title": { "en": "Frontend Development", "fr": "Développement front-end" },
+      "icon": "Globe",
+      "skills": [
+        { "name": "React", "level": 85, "years": 2, "evidence": ["messenger-live-messaging", "law-firm-management-software", "tutoring-applications"] },
+        { "name": "Vue.js", "level": 75, "years": 1, "evidence": ["equation-solver-chatbot"] },
+        { "name": "HTML/CSS", "level": 90, "years": 3 },
+        { "name": "Tailwind CSS", "level": 85, "years": 2 },
+        { "name": "Next.js", "level": 70, "years": 1 }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": { "en": "AI and Machine Learning", "fr": "IA et apprentissage automatique" },
+      "icon": "Brain",
+      "skills": [
+        { "name": "Adversarial Machine Learning", "level": 80, "years": 2, "evidence": ["promptrend-llm-vulnerability-discovery"] },
+        { "name": "Machine Learning", "level": 75, "years": 2, "evidence": ["equation-solver-chatbot"] },
+        { "name": "TensorFlow", "level": 70, "years": 1 },
+        { "name": "NLP", "level": 70, "years": 1, "evidence": ["equation-solver-chatbot"] },
+        { "name": "Data Analysis", "level": 80, "years": 2, "evidence": ["virus-propagation-simulation"] }
+      ]
+    },
+    {
+      "id": "soft",
+      "title": { "en": "Execution and Leadership", "fr": "Exécution et leadership" },
+      "icon": "Users",
+      "skills": [
+        { "name": "Problem Solving", "level": 90, "years": 3 },
+        { "name": "Team Collaboration", "level": 85, "years": 3 },
+        { "name": "Communication", "level": 85, "years": 3 },
+        { "name": "Project Management", "level": 80, "years": 2 },
+        { "name": "Agile/Scrum", "level": 85, "years": 2 }
+      ]
+    }
+  ]
+}

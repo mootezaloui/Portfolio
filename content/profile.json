@@ -1,0 +1,36 @@
+{
+  "name": "Mootez Aloui",
+  "tagline": {
+    "en": "Software Engineer",
+    "fr": "Ingénieur logiciel"
+  },
+  "shortBio": {
+    "en": "Software engineer building reliable AI and security-focused software systems with explicit constraints, measurable decisions, and pragmatic delivery.",
+    "fr": "Ingénieur logiciel concevant des systèmes d'IA fiables et des logiciels axés sur la sécurité, avec des contraintes explicites, des décisions mesurables et une livraison pragmatique."
+  },
+  "contact": {
+    "email": "Mootez.aloui@medtech.tn",
+    "linkedin": "https://www.linkedin.com/in/mootez-aloui-490090211/",
+    "github": "https://github.com/mootezaloui",
+    "website": "https://mootezaloui.github.io/Portfolio",
+    "phone": "+216 41 044 635"
+  },
+  "identity": {
+    "positioning": {
+      "en": "I design and ship production software systems with clear tradeoffs, reliable execution, and inspectable outcomes.",
+      "fr": "Je conçois et livre des systèmes logiciels de production avec des compromis clairs, une exécution fiable et des résultats inspectables."
+    },
+    "keywords": [
+      "AI Engineering",
+      "Machine Learning",
+      "Cybersecurity",
+      "AI Security",
+      "Software Architecture"
+    ],
+    "availability": {
+      "en": "Open to full-time roles in AI engineering, cybersecurity, AI security, and software architecture.",
+      "fr": "Ouvert à des postes à temps plein en ingénierie IA, cybersécurité, sécurité IA et architecture logicielle."
+    },
+    "location": "Tunis, Tunisia"
+  }
+}

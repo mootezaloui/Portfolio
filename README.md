@@ -1,121 +1,66 @@
-# 🌐 Mootez Aloui — Personal Portfolio
+# Tazou Runtime
 
-![Portfolio Preview](./assets/preview.png)
+Portfolio rebuild for a constrained AI systems showcase.
 
-Welcome to the source code of my **personal developer portfolio** — a modern, responsive web application showcasing my work as a **Cybersecurity-Focused Software Engineer** with strong expertise in **AI Security, Cloud Development, and Full-Stack Engineering**.
+Current status: **Phase 7 launch preparation in progress**.
 
-This portfolio highlights my professional journey, selected projects, skills, certifications, and published research.
+## Stack
 
----
+- Next.js App Router
+- TypeScript (strict mode)
+- Tailwind CSS
+- ESLint + Prettier
+- Radix-based primitives for UI foundation
 
-## 🚀 Features
+## Local Setup
 
-- **⚡ Modern React + Tailwind CSS UI** — clean, minimal, and responsive design.
-- **🎭 Dynamic Animated Sections** — smooth transitions for About, Experience, Projects, and Skills.
-- **📂 Structured Data-Driven Sections** — easily update experience, skills, and projects through JSON-like configs.
-- **🔒 Security-Focused Branding** — adapted to highlight cybersecurity & AI security expertise.
-- **🌐 Single-Page Navigation** — seamless scrolling experience with animated components.
+1. Install dependencies:
 
----
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React, Tailwind CSS, Lucide Icons  
-- **Deployment:** GitHub Pages  
-- **Animation & UX:** Intersection Observers, custom animations  
-- **Assets:** Custom profile picture & icons  
-
----
-
-## 📂 Project Structure
-
-~~~
-src/
- ├── components/
- │   ├── Skills.js
- │   ├── Projects.js
- │   ├── Experiences.js
- │   ├── Certifications.js
- │   ├── Contributions.js
- │   └── ...
- ├── assets/
- │   ├── ProfilePic.png
- │   └── project images
- ├── App.js
- └── index.js
-~~~
-
----
-
-## 💼 Content Highlights
-
-- **About Me** — A quick overview of my background, cybersecurity interests, and AI security expertise.
-- **Experience** — Professional roles including my work at **Datadoit** (LLM security research) and **Redstart**.
-- **Projects** — Key technical projects such as:
-  - 🧠 **PrompTrend** — Continuous LLM vulnerability discovery & risk scoring framework
-  - 🔢 **Equation Solver Chatbot** — Secure NLP & ML-based math assistant
-  - 🕸️ **Virus Propagation Simulation** — Graph-based modeling & control strategies
-- **Skills & Certifications** — Clear and security-aligned.
-- **Awards** — Highlights of academic & research recognition.
-
----
-
-## ⚡ Getting Started
-
-Clone the repo and install dependencies:
-
-~~~
-git clone https://github.com/mootezaloui/portfolio.git
-cd portfolio
+```bash
 npm install
-~~~
+```
 
-Run locally:
+2. Configure environment:
 
-~~~
-npm start
-~~~
+```bash
+cp .env.example .env.local
+```
 
-Build for production:
+3. Start development server:
 
-~~~
-npm run build
-~~~
+```bash
+npm run dev
+```
 
-Deploy (GitHub Pages / Vercel / Netlify):
+4. Open:
 
-~~~
-npm run deploy
-~~~
+```text
+http://localhost:3000
+```
 
----
+## Scripts
 
-## 🧑‍💻 About Me
+- `npm run dev` - start local dev server
+- `npm run build` - production build
+- `npm run start` - run production server
+- `npm run lint` - lint checks
+- `npm run typecheck` - TypeScript checks
+- `npm run twin:index` - build twin retrieval index
+- `npm run test:twin` - run twin tests
+- `npm run launch:check` - run launch readiness checks (lint + typecheck + tests + build)
+- `npm run format` - format repository
+- `npm run format:check` - verify formatting
 
-I’m **Mootez Aloui**, a cybersecurity-focused software engineer and researcher in **LLM security**.  
-I specialize in **AI vulnerability assessment, secure DevOps, penetration testing, and adversarial machine learning**.  
-My goal is to **build safer AI systems and protect digital infrastructures**.
+## Deployment Target
 
----
+- Platform: Vercel
+- Runtime-specific endpoints are scaffolded under `app/api/*` and `app/agent/*`.
+- Final Phase 0/1 external step still pending: link repository to Vercel and validate preview deployments.
+- Launch checklist and operational steps: `LAUNCH_RUNBOOK.md`
+- Final readiness matrix: `PHASE7_READINESS.md`
 
-## 🌟 Live Portfolio
+## Repository Notes
 
-👉 [View my portfolio](https://mootezaloui.github.io/Portfolio)
-
----
-
-## 📫 Contact
-
-- 📧 Email: [Mootez.aloui@medtech.tn](mailto:Mootez.aloui@medtech.tn)  
-- 🔗 LinkedIn: [linkedin.com/in/mootez-aloui-490090211](https://www.linkedin.com/in/mootez-aloui-490090211/)  
-- 🐙 GitHub: [github.com/mootezaloui](https://github.com/mootezaloui)
-
----
-
-## 🛡️ License
-
-This project is open-sourced under the [MIT License](LICENSE).
-
----
-
-> Built with ❤️ to showcase my journey as a **Cybersecurity & AI Security Engineer**.
+- Legacy CRA portfolio snapshot was archived on **2026-04-17** under `archive/cra-2026-04-17/`.
+- Current architecture spec lives in `ARCHITECTURE.md`.
+- Phase 6 audit details live in `PHASE6_AUDIT.md`.

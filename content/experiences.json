@@ -1,0 +1,340 @@
+{
+  "experiences": [
+    {
+      "slug": "datadoit-cybersecurity-ai-engineer-intern",
+      "title": {
+        "en": "Cybersecurity and AI Engineer Intern",
+        "fr": "Stagiaire ingénieur cybersécurité et IA"
+      },
+      "company": "Datadoit",
+      "period": "Jan 2025 - Jun 2025",
+      "location": "Tunis, Tunisia",
+      "type": { "en": "Internship", "fr": "Stage" },
+      "category": "work",
+      "summary": {
+        "en": "Led AI security evaluation work on black-box LLM systems and built a continuous vulnerability discovery pipeline.",
+        "fr": "Piloté l'évaluation de sécurité IA sur des systèmes LLM en boîte noire et construit un pipeline continu de découverte de vulnérabilités."
+      },
+      "achievements": [
+        {
+          "en": "Designed and implemented PrompTrend, a continuous vulnerability discovery and risk scoring system for LLMs.",
+          "fr": "Conçu et implémenté PrompTrend, un système continu de découverte de vulnérabilités et de scoring de risque pour LLM."
+        },
+        {
+          "en": "Performed adversarial testing to detect jailbreaks, prompt injections, and model misuse.",
+          "fr": "Réalisé des tests adverses pour détecter jailbreaks, injections de prompts et usages abusifs du modèle."
+        },
+        {
+          "en": "Published the PrompTrend research paper on arXiv in 2025.",
+          "fr": "Publié l'article de recherche PrompTrend sur arXiv en 2025."
+        }
+      ],
+      "technologies": ["Python", "Docker", "Azure", "LLM Security", "Adversarial Testing"],
+      "confidential": false
+    },
+    {
+      "slug": "redstart-software-engineer-intern",
+      "title": {
+        "en": "Software Engineer Intern",
+        "fr": "Stagiaire ingénieur logiciel"
+      },
+      "company": "RedStart",
+      "period": "Summer 2024",
+      "location": "Tunis, Tunisia",
+      "type": { "en": "Internship", "fr": "Stage" },
+      "category": "work",
+      "summary": {
+        "en": "Improved cloud-hosted application security and contributed to secure deployment and CI/CD practices.",
+        "fr": "Renforcé la sécurité d'applications hébergées dans le cloud et contribué aux pratiques de déploiement sécurisé et CI/CD."
+      },
+      "achievements": [
+        {
+          "en": "Conducted penetration testing on a cloud-hosted web application and reinforced security controls.",
+          "fr": "Réalisé des tests d'intrusion sur une application web hébergée dans le cloud et renforcé les contrôles de sécurité."
+        },
+        {
+          "en": "Deployed application components securely and integrated an ML model for email generation.",
+          "fr": "Déployé des composants applicatifs de manière sécurisée et intégré un modèle ML pour la génération d'e-mails."
+        },
+        {
+          "en": "Contributed to secure backend architecture and delivery practices.",
+          "fr": "Contribué à l'architecture back-end sécurisée et aux pratiques de livraison."
+        }
+      ],
+      "technologies": ["Cloud", "TensorFlow", "CI/CD", "Penetration Testing", "Backend Security"],
+      "confidential": false
+    },
+    {
+      "slug": "freelance-secure-web-ml",
+      "title": { "en": "Freelancer", "fr": "Freelance" },
+      "company": "Multiple Clients",
+      "period": "Summer 2023",
+      "location": "Tunisia",
+      "type": { "en": "Freelance", "fr": "Freelance" },
+      "category": "work",
+      "summary": {
+        "en": "Delivered secure classification and automation web tools with production-safe ML integrations.",
+        "fr": "Livré des outils web sécurisés de classification et d'automatisation avec des intégrations ML prêtes pour la production."
+      },
+      "achievements": [
+        {
+          "en": "Built secure document-classification apps that reduced manual sorting time by 50%.",
+          "fr": "Construit des applications de classification de documents sécurisées qui ont réduit le temps de tri manuel de 50%."
+        },
+        {
+          "en": "Integrated ML models into production React environments with API hardening and secure data handling.",
+          "fr": "Intégré des modèles ML dans des environnements React de production avec durcissement d'API et traitement sécurisé des données."
+        }
+      ],
+      "technologies": ["Python", "Scikit-Learn", "React", "API Security"],
+      "confidential": false
+    },
+    {
+      "slug": "carrier-product-owner-intern",
+      "title": {
+        "en": "Engineering Intern — Product Owner",
+        "fr": "Stagiaire ingénierie — Product Owner"
+      },
+      "company": "Carrier",
+      "period": "2023",
+      "location": "Tunis, Tunisia",
+      "type": { "en": "Internship", "fr": "Stage" },
+      "category": "work",
+      "summary": {
+        "en": "On-site product owner for an internal operations platform used by HVAC installation technicians across Tunisia.",
+        "fr": "Product owner sur site pour une plateforme d'opérations internes utilisée par les techniciens d'installation CVC à travers la Tunisie."
+      },
+      "achievements": [
+        {
+          "en": "Gathered and formalized business requirements, wrote detailed functional specifications, and managed a backlog of tickets with an offshore dev team.",
+          "fr": "Recueilli et formalisé les exigences métier, rédigé des spécifications fonctionnelles détaillées et géré un backlog de tickets avec une équipe de dev offshore."
+        },
+        {
+          "en": "Oversaw delivery of key modules: ticketing system, operations dashboard, purchase order and delivery tracking, and invoice management.",
+          "fr": "Supervisé la livraison de modules clés : système de ticketing, tableau de bord des opérations, suivi des commandes et livraisons, gestion des factures."
+        },
+        {
+          "en": "Served as primary liaison between Carrier's internal stakeholders and the external dev team — aligning priorities, timelines, and acceptance criteria.",
+          "fr": "Servi d'interlocuteur principal entre les parties prenantes internes de Carrier et l'équipe de dev externe — en alignant priorités, échéances et critères d'acceptation."
+        }
+      ],
+      "technologies": ["Product Ownership", "Requirements Analysis", "Backlog Management", "Stakeholder Coordination"],
+      "confidential": false
+    },
+    {
+      "slug": "carrier-junior-student-intern",
+      "title": {
+        "en": "Junior Student Intern",
+        "fr": "Stagiaire étudiant junior"
+      },
+      "company": "Carrier",
+      "period": "Summer 2022",
+      "location": "Tunisia",
+      "type": { "en": "Internship", "fr": "Stage" },
+      "category": "work",
+      "summary": {
+        "en": "Supported HVAC system optimization through simulation, data analysis, and validation workflows.",
+        "fr": "Soutenu l'optimisation des systèmes CVC via la simulation, l'analyse de données et les workflows de validation."
+      },
+      "achievements": [
+        {
+          "en": "Contributed to system design improvements with analysis and simulation outputs.",
+          "fr": "Contribué à l'amélioration de la conception des systèmes via des analyses et résultats de simulation."
+        },
+        {
+          "en": "Supported validation practices and engineering process optimization.",
+          "fr": "Soutenu les pratiques de validation et l'optimisation des processus d'ingénierie."
+        }
+      ],
+      "technologies": ["Data Analysis", "Simulation", "Engineering Validation"],
+      "confidential": false
+    },
+    {
+      "slug": "apple-developer-tester",
+      "title": {
+        "en": "Apple Beta Software Program",
+        "fr": "Apple Beta Software Program"
+      },
+      "company": "Apple",
+      "period": "Sep 2021 - Present",
+      "location": "Remote",
+      "type": { "en": "Beta Program", "fr": "Programme bêta" },
+      "category": "beta",
+      "summary": {
+        "en": "Provides structured engineering feedback on Apple Intelligence and system-level iOS behavior.",
+        "fr": "Fournit des retours d'ingénierie structurés sur Apple Intelligence et le comportement système d'iOS."
+      },
+      "achievements": [
+        {
+          "en": "Tested iOS beta features with attention to privacy and stability.",
+          "fr": "Testé les fonctionnalités bêta d'iOS avec attention particulière à la confidentialité et à la stabilité."
+        },
+        {
+          "en": "Validated CoreML and Apple Intelligence behavior from a security and reliability perspective.",
+          "fr": "Validé le comportement de CoreML et d'Apple Intelligence sous l'angle sécurité et fiabilité."
+        }
+      ],
+      "technologies": ["iOS", "CoreML", "Apple Intelligence", "Security Testing"],
+      "confidential": false
+    },
+    {
+      "slug": "windows-insider",
+      "title": { "en": "Windows Insider", "fr": "Windows Insider" },
+      "company": "Microsoft",
+      "period": "Present",
+      "location": "Remote",
+      "type": { "en": "Beta Program", "fr": "Programme bêta" },
+      "category": "beta",
+      "summary": {
+        "en": "Early-access testing of Windows builds with structured feedback on system-level behavior and AI features.",
+        "fr": "Tests en accès anticipé de builds Windows avec retours structurés sur le comportement système et les fonctionnalités IA."
+      },
+      "achievements": [
+        {
+          "en": "Provided structured engineering feedback on pre-release Windows builds.",
+          "fr": "Fourni des retours d'ingénierie structurés sur des builds Windows pré-release."
+        },
+        {
+          "en": "Reported stability, security, and AI-feature behavior issues through Microsoft's feedback channels.",
+          "fr": "Signalé des problèmes de stabilité, de sécurité et de comportement des fonctionnalités IA via les canaux de feedback Microsoft."
+        }
+      ],
+      "technologies": ["Windows", "Copilot", "OS Testing"],
+      "confidential": false
+    },
+    {
+      "slug": "snapchat-early-access",
+      "title": {
+        "en": "Snapchat Early Access",
+        "fr": "Accès anticipé Snapchat"
+      },
+      "company": "Snap Inc.",
+      "period": "Present",
+      "location": "Remote",
+      "type": { "en": "Beta Program", "fr": "Programme bêta" },
+      "category": "beta",
+      "summary": {
+        "en": "Early-access tester for Snapchat features, with focus on AI-driven product behavior.",
+        "fr": "Testeur en accès anticipé pour les fonctionnalités Snapchat, axé sur le comportement produit piloté par IA."
+      },
+      "achievements": [
+        {
+          "en": "Tested pre-release Snapchat features with focus on AI behavior and user experience.",
+          "fr": "Testé des fonctionnalités Snapchat pré-release en se concentrant sur le comportement IA et l'expérience utilisateur."
+        },
+        {
+          "en": "Reported issues and edge cases through the early-access program.",
+          "fr": "Signalé des problèmes et cas limites via le programme d'accès anticipé."
+        }
+      ],
+      "technologies": ["Mobile", "AI Features", "Product Testing"],
+      "confidential": false
+    },
+    {
+      "slug": "smu-library-officer",
+      "title": { "en": "Library Officer", "fr": "Agent de bibliothèque" },
+      "company": "SMU",
+      "period": "Sep 2021 - Present",
+      "location": "Tunis, Tunisia",
+      "type": { "en": "Part-time", "fr": "Temps partiel" },
+      "category": "campus",
+      "summary": {
+        "en": "Digitized resource management operations and contributed to academic event organization.",
+        "fr": "Numérisé les opérations de gestion des ressources et contribué à l'organisation d'événements académiques."
+      },
+      "achievements": [
+        {
+          "en": "Improved library management efficiency by around 20% through process digitization.",
+          "fr": "Amélioré l'efficacité de la gestion de la bibliothèque d'environ 20% grâce à la numérisation des processus."
+        },
+        {
+          "en": "Helped organize technical and academic events with increased student engagement.",
+          "fr": "Participé à l'organisation d'événements techniques et académiques avec un engagement étudiant accru."
+        }
+      ],
+      "technologies": ["Operations", "Process Automation", "Event Coordination"],
+      "confidential": false
+    },
+    {
+      "slug": "smu-admissions-officer-intern",
+      "title": {
+        "en": "Admissions Officer Intern",
+        "fr": "Stagiaire au bureau des admissions"
+      },
+      "company": "SMU",
+      "period": "Summer 2021",
+      "location": "Tunis, Tunisia",
+      "type": { "en": "Internship", "fr": "Stage" },
+      "category": "campus",
+      "summary": {
+        "en": "Improved admissions operations through workflow support and process optimization.",
+        "fr": "Amélioré les opérations d'admission via un soutien aux workflows et l'optimisation des processus."
+      },
+      "achievements": [
+        {
+          "en": "Contributed to recruitment workflows linked with a 15% rise in applications.",
+          "fr": "Contribué à des workflows de recrutement associés à une hausse de 15% des candidatures."
+        },
+        {
+          "en": "Improved administrative efficiency through CRM and office tooling optimizations.",
+          "fr": "Amélioré l'efficacité administrative via des optimisations CRM et outillage bureautique."
+        }
+      ],
+      "technologies": ["CRM", "Process Optimization", "Operations"],
+      "confidential": false
+    },
+    {
+      "slug": "ieee-sponsoring-manager",
+      "title": {
+        "en": "Sponsoring Manager",
+        "fr": "Responsable sponsoring"
+      },
+      "company": "IEEE SMU Student Branch",
+      "period": "Dec 2020 - Dec 2022",
+      "location": "Tunis, Tunisia",
+      "type": { "en": "Leadership", "fr": "Leadership" },
+      "category": "leadership",
+      "summary": {
+        "en": "Led sponsorship operations and partnership strategy for student technical events.",
+        "fr": "Piloté les opérations de sponsoring et la stratégie de partenariat pour des événements techniques étudiants."
+      },
+      "achievements": [
+        {
+          "en": "Led a 15-member team and secured more than $10,000 in sponsorship funding.",
+          "fr": "Dirigé une équipe de 15 personnes et obtenu plus de 10 000 $ de financements de sponsoring."
+        },
+        {
+          "en": "Implemented partnership strategies that exceeded financial goals by 15%.",
+          "fr": "Mis en œuvre des stratégies de partenariat qui ont dépassé les objectifs financiers de 15%."
+        }
+      ],
+      "technologies": ["Team Leadership", "Partnerships", "Program Management"],
+      "confidential": false
+    },
+    {
+      "slug": "rotaract-member",
+      "title": { "en": "Member", "fr": "Membre" },
+      "company": "Tunis Mediterranean Rotaract",
+      "period": "Mar 2020 - Nov 2023",
+      "location": "Tunis, Tunisia",
+      "type": { "en": "Volunteer", "fr": "Bénévolat" },
+      "category": "leadership",
+      "summary": {
+        "en": "Contributed to community projects combining social impact and technology support.",
+        "fr": "Contribué à des projets communautaires alliant impact social et soutien technologique."
+      },
+      "achievements": [
+        {
+          "en": "Contributed to more than 10 community initiatives impacting over 200 people.",
+          "fr": "Contribué à plus de 10 initiatives communautaires ayant touché plus de 200 personnes."
+        },
+        {
+          "en": "Supported planning and execution of local service initiatives.",
+          "fr": "Soutenu la planification et l'exécution d'initiatives de service local."
+        }
+      ],
+      "technologies": ["Community Operations", "Event Logistics", "Coordination"],
+      "confidential": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "education": [
+    {
+      "slug": "medtech-beng-ai",
+      "institution": "Mediterranean Institute of Technology (MedTech)",
+      "degree": {
+        "en": "B.Eng. Software Engineering",
+        "fr": "Diplôme d'ingénieur en génie logiciel"
+      },
+      "specialization": {
+        "en": "AI Specialization",
+        "fr": "Spécialisation en IA"
+      },
+      "period": "2020 - 2025",
+      "location": "Tunis, Tunisia",
+      "highlights": [
+        {
+          "en": "Capstone: Research on evaluation methodologies and behavioral robustness of Large Language Models under adversarial prompt transformations.",
+          "fr": "Projet de fin d'études : recherche sur les méthodologies d'évaluation et la robustesse comportementale des grands modèles de langage face à des transformations adverses de prompts."
+        },
+        {
+          "en": "Specialized track in Artificial Intelligence with coursework in ML, NLP, and system design.",
+          "fr": "Parcours spécialisé en Intelligence Artificielle incluant ML, NLP et conception de systèmes."
+        },
+        {
+          "en": "Best Project Award (Tutoring Platform, 2024) and Best IoT Project (Smart Pet Management, 2023).",
+          "fr": "Prix du meilleur projet (plateforme de tutorat, 2024) et meilleur projet IoT (Smart Pet Management, 2023)."
+        }
+      ]
+    }
+  ]
+}

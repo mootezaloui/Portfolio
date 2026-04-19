@@ -1,0 +1,364 @@
+{
+  "certifications": [
+    {
+      "title": "Google Cybersecurity Professional Certificate V2",
+      "issuer": "Google",
+      "date": "Oct 2024",
+      "credentialId": "04Q6LKOVD301",
+      "image": "/images/certifications/google.svg",
+      "skills": ["Security Basics", "CIA Triad", "Risk and Controls"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Play It Safe: Manage Security Risks",
+      "issuer": "Google",
+      "date": "Oct 2024",
+      "credentialId": "H0KI9JHFP3CB",
+      "image": "/images/certifications/google.svg",
+      "skills": ["Risk Management", "Controls", "Incident Response Basics"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Command Line in Linux",
+      "issuer": "Coursera",
+      "date": "Oct 2022",
+      "credentialId": "EDXD65NJ3TK9",
+      "image": "/images/certifications/coursera.svg",
+      "skills": ["Linux", "Bash", "Shell Scripting"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "AWS Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "In Progress",
+      "credentialId": "",
+      "image": "/images/certifications/aws.svg",
+      "skills": ["Cloud Fundamentals", "Shared Responsibility Model"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Exploring Adversarial Machine Learning",
+      "issuer": "NVIDIA",
+      "date": "2024",
+      "credentialId": "",
+      "image": "/images/certifications/nvidia.svg",
+      "skills": ["Adversarial ML", "AI Security Concepts"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Professional Scrum Master I",
+      "issuer": "Scrum.org",
+      "date": "2024",
+      "credentialId": "",
+      "image": "/images/certifications/scrum.svg",
+      "skills": ["Scrum", "Agile Framework"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Certificate of completion: Claude 101",
+      "issuer": "Anthropic",
+      "date": "Mar 2026",
+      "credentialId": "6zvary7v65oe",
+      "image": "/images/certifications/anthropic.svg",
+      "skills": ["Claude", "Prompt Engineering", "AI Workflow"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Certificate of completion: Introduction to Claude Cowork",
+      "issuer": "Anthropic",
+      "date": "Mar 2026",
+      "credentialId": "q9xdvapkhp7j",
+      "image": "/images/certifications/anthropic.svg",
+      "skills": ["Claude Cowork", "Collaboration", "AI Workflow"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Claude Code in Action",
+      "issuer": "Anthropic",
+      "date": "Mar 2026",
+      "credentialId": "egveam2xtwqq",
+      "image": "/images/certifications/anthropic.svg",
+      "skills": ["Claude Code", "Agentic Coding", "Developer Tooling"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Certificate of Completion: AI Fluency Framework & Foundations",
+      "issuer": "Anthropic",
+      "date": "Mar 2026",
+      "credentialId": "2ykxy62m2pza",
+      "image": "/images/certifications/anthropic.svg",
+      "skills": ["AI Fluency", "AI Foundations", "Reasoning Frameworks"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Certificate of completion: Introduction to agent skills",
+      "issuer": "Anthropic",
+      "date": "Mar 2026",
+      "credentialId": "8ficqqv3b79s",
+      "image": "/images/certifications/anthropic.svg",
+      "skills": ["AI Agents", "Tool Use", "Automation"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Cybersecurity Fundamentals",
+      "issuer": "IBM",
+      "date": "Nov 2025",
+      "credentialId": "",
+      "image": "/images/certifications/ibm.svg",
+      "skills": ["Cybersecurity Basics", "Risk Management", "Security Controls"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Machine Learning with Python (with Honors)",
+      "issuer": "IBM",
+      "date": "Dec 2024",
+      "credentialId": "NWKE685W1OBB",
+      "image": "/images/certifications/ibm.svg",
+      "skills": ["Machine Learning", "Python", "Model Evaluation"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Google Cybersecurity Certificate",
+      "issuer": "Google",
+      "date": "Nov 2024",
+      "credentialId": "",
+      "image": "/images/certifications/google.svg",
+      "skills": ["Cybersecurity", "Security Operations", "Threat Detection"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Google Cybersecurity Specialization",
+      "issuer": "Google",
+      "date": "Nov 2024",
+      "credentialId": "DIFY9DJ7EQ5R",
+      "image": "/images/certifications/google.svg",
+      "skills": ["Cybersecurity", "Incident Response", "Security Analysis"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Put It to Work: Prepare for Cybersecurity Jobs",
+      "issuer": "Google",
+      "date": "Nov 2024",
+      "credentialId": "M3FQA0S5YNZE",
+      "image": "/images/certifications/google.svg",
+      "skills": ["Career Readiness", "Security Portfolio", "Interview Prep"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Automate Cybersecurity Tasks with Python",
+      "issuer": "Google",
+      "date": "Nov 2024",
+      "credentialId": "MMCDFMWZODRD",
+      "image": "/images/certifications/google.svg",
+      "skills": ["Python", "Security Automation", "Scripting"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Sound the Alarm: Detection and Response",
+      "issuer": "Google",
+      "date": "Nov 2024",
+      "credentialId": "COPFKTGYHWB4",
+      "image": "/images/certifications/google.svg",
+      "skills": ["Detection", "Incident Response", "SOC Workflows"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Assets, Threats, and Vulnerabilities",
+      "issuer": "Google",
+      "date": "Nov 2024",
+      "credentialId": "MXAVEUNQH0IH",
+      "image": "/images/certifications/google.svg",
+      "skills": ["Threat Modeling", "Vulnerability Assessment", "Asset Security"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Tools of the Trade: Linux and SQL",
+      "issuer": "Google",
+      "date": "Nov 2024",
+      "credentialId": "3GKDZ2GIQJLE",
+      "image": "/images/certifications/google.svg",
+      "skills": ["Linux", "SQL", "MySQL"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+      "issuer": "Amazon Web Services (AWS)",
+      "date": "Nov 2024",
+      "credentialId": "",
+      "image": "/images/certifications/aws.svg",
+      "skills": ["Cloud Foundations", "AWS Services", "Cloud Security Basics"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Connect and Protect: Networks and Network Security",
+      "issuer": "Google",
+      "date": "Oct 2024",
+      "credentialId": "KEV890BAMU9M",
+      "image": "/images/certifications/google.svg",
+      "skills": ["Networking", "Network Security", "Traffic Analysis"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Dynamic Programming, Greedy Algorithms",
+      "issuer": "University of Colorado Boulder",
+      "date": "Oct 2024",
+      "credentialId": "RDZCE583Z0FZ",
+      "image": "/images/certifications/uocb.svg",
+      "skills": ["Algorithms", "Dynamic Programming", "Greedy Methods"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Java Testing Specialization",
+      "issuer": "LearnQuest",
+      "date": "Oct 2024",
+      "credentialId": "615TZEO7VBK7",
+      "image": "/images/certifications/learnquest.svg",
+      "skills": ["Java", "Testing", "JUnit"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Understanding Research Methods",
+      "issuer": "University of London",
+      "date": "Oct 2024",
+      "credentialId": "MS7S4M670SYH",
+      "image": "/images/certifications/uol.svg",
+      "skills": ["Research Methods", "Critical Analysis", "Study Design"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Mocking with JUnit",
+      "issuer": "LearnQuest",
+      "date": "Mar 2024",
+      "credentialId": "R7BKHRWPAM27",
+      "image": "/images/certifications/learnquest.svg",
+      "skills": ["JUnit", "Mocking", "Unit Testing"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Create Your First Automation Script Using Selenium and Java",
+      "issuer": "Coursera",
+      "date": "Mar 2024",
+      "credentialId": "YEXXL9929ANB",
+      "image": "/images/certifications/coursera.svg",
+      "skills": ["Selenium", "Java", "Test Automation"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Java Testing: An Introduction to TDD",
+      "issuer": "LearnQuest",
+      "date": "Mar 2024",
+      "credentialId": "CEPSNW7D5TMD",
+      "image": "/images/certifications/learnquest.svg",
+      "skills": ["TDD", "Java", "Unit Testing"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Parameterized and Dynamic Testing in JUnit",
+      "issuer": "LearnQuest",
+      "date": "May 2024",
+      "credentialId": "Y8FDBA38RA7J",
+      "image": "/images/certifications/learnquest.svg",
+      "skills": ["JUnit", "Parameterized Tests", "Dynamic Tests"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Ethics, Technology and Engineering",
+      "issuer": "Eindhoven University of Technology",
+      "date": "Mar 2024",
+      "credentialId": "KUYWZCMV72QR",
+      "image": "/images/certifications/tue.svg",
+      "skills": ["Engineering Ethics", "Responsible Innovation", "Technology Governance"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Performance Testing with JMeter for absolute beginners",
+      "issuer": "Coursera",
+      "date": "May 2024",
+      "credentialId": "A3VT7UKJD6BB",
+      "image": "/images/certifications/coursera.svg",
+      "skills": ["JMeter", "Performance Testing", "Load Testing"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Excel Fundamentals - Formulas for Finance",
+      "issuer": "Corporate Finance Institute (CFI)",
+      "date": "Oct 2023",
+      "credentialId": "83558485",
+      "image": "/images/certifications/cfi.svg",
+      "skills": ["Excel", "Financial Modeling", "Formulas"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Programming Fundamentals in Kotlin",
+      "issuer": "Meta",
+      "date": "Apr 2023",
+      "credentialId": "XSF2LZUERJ4K",
+      "image": "/images/certifications/meta.svg",
+      "skills": ["Kotlin", "Programming Fundamentals", "Problem Solving"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Determine Shortest Paths Between Routers Using Python",
+      "issuer": "Coursera",
+      "date": "Mar 2023",
+      "credentialId": "8ZDNZV4QUD3J",
+      "image": "/images/certifications/coursera.svg",
+      "skills": ["Python", "Graph Algorithms", "Networking"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Introduction to Android Mobile Application Development",
+      "issuer": "Meta",
+      "date": "Mar 2023",
+      "credentialId": "ADFTAQHHXW39",
+      "image": "/images/certifications/meta.svg",
+      "skills": ["Android", "Mobile Development", "Kotlin"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Introduction to Agile Development and Scrum (avec mention)",
+      "issuer": "IBM",
+      "date": "Feb 2023",
+      "credentialId": "V4QDS7NCE2TW",
+      "image": "/images/certifications/ibm.svg",
+      "skills": ["Agile Methodologies", "Scrum", "Team Delivery"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "React Native",
+      "issuer": "Meta",
+      "date": "Feb 2023",
+      "credentialId": "L636S97YPGKY",
+      "image": "/images/certifications/meta.svg",
+      "skills": ["React Native", "React", "Mobile UI"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Learn Fundamentals Of Computer Programming With C Language",
+      "issuer": "Coursera",
+      "date": "Nov 2022",
+      "credentialId": "9STFVL5WWZ62",
+      "image": "/images/certifications/coursera.svg",
+      "skills": ["C", "Programming Fundamentals", "Algorithms Basics"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Create Your First NoSQL Database with MongoDB and Compass",
+      "issuer": "Coursera",
+      "date": "Nov 2022",
+      "credentialId": "268H3XXM3H9M",
+      "image": "/images/certifications/coursera.svg",
+      "skills": ["MongoDB", "NoSQL", "Database Design"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    },
+    {
+      "title": "Business Model Canvas: A Tool for Entrepreneurs and Innovators (Project-Centered Course)",
+      "issuer": "Kennesaw State University",
+      "date": "Nov 2022",
+      "credentialId": "WDNKQAX2HA95",
+      "image": "/images/certifications/ksu.svg",
+      "skills": ["Business Model Canvas", "Innovation", "Entrepreneurship"],
+      "verifyUrl": "https://www.linkedin.com/in/mootez-aloui-490090211/details/certifications/"
+    }
+  ]
+}

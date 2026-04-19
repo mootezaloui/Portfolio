@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: #f4f1ea;
+  --foreground: #0f1720;
+  --surface: #ffffff;
+  --muted: #334155;
+  --accent: #7f5a3a;
+  --accent-foreground: #ffffff;
+  --border: #d2cbbb;
+  --progress-track: #e8e5dd;
+  --skill-high: #22c55e;
+  --skill-mid: #3b82f6;
+  --skill-low: #f59e0b;
+  --warning-background: #fff4db;
+  --warning-foreground: #5f3d06;
+  --warning-border: #d8a357;
+  --error-background: #fff1f2;
+  --error-foreground: #7f1d1d;
+  --error-border: #ecb0b8;
+  --success-background: #ebfaef;
+  --success-foreground: #166534;
+  --success-border: #a0dfb4;
+  --overlay: rgb(0 0 0 / 0.4);
+  --hero-orb: rgb(127 90 58 / 0.22);
+  --avatar-glow-a: rgb(127 90 58 / 0.35);
+  --avatar-glow-b: rgb(15 23 32 / 0.2);
+  --shadow-floating: 0 8px 24px rgb(15 23 32 / 0.18);
+  --shadow-elevated: 0 15px 45px rgb(15 23 32 / 0.15);
+  --shadow-panel: 0 18px 40px rgb(15 23 32 / 0.08);
+  --bg-radial-1: rgb(127 90 58 / 0.08);
+  --bg-radial-2: rgb(15 23 32 / 0.08);
+  --bg-wash: rgb(255 255 255 / 0.65);
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #0c1119;
+  --foreground: #e5edf6;
+  --surface: #141b25;
+  --muted: #9aa9bc;
+  --accent: #c29269;
+  --accent-foreground: #0c1119;
+  --border: #2b3442;
+  --progress-track: #2a3444;
+  --skill-high: #31d57a;
+  --skill-mid: #5aa2ff;
+  --skill-low: #ffbe54;
+  --warning-background: #3a2c14;
+  --warning-foreground: #f4d28d;
+  --warning-border: #8f6530;
+  --error-background: #3a1d23;
+  --error-foreground: #f3b7c1;
+  --error-border: #7f3340;
+  --success-background: #143125;
+  --success-foreground: #97e8b8;
+  --success-border: #306d4f;
+  --overlay: rgb(0 0 0 / 0.58);
+  --hero-orb: rgb(194 146 105 / 0.25);
+  --avatar-glow-a: rgb(194 146 105 / 0.36);
+  --avatar-glow-b: rgb(14 233 166 / 0.2);
+  --shadow-floating: 0 8px 24px rgb(0 0 0 / 0.42);
+  --shadow-elevated: 0 15px 45px rgb(0 0 0 / 0.5);
+  --shadow-panel: 0 18px 40px rgb(0 0 0 / 0.4);
+  --bg-radial-1: rgb(194 146 105 / 0.12);
+  --bg-radial-2: rgb(14 233 166 / 0.1);
+  --bg-wash: rgb(11 17 27 / 0.62);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-progress-track: var(--progress-track);
+  --color-skill-high: var(--skill-high);
+  --color-skill-mid: var(--skill-mid);
+  --color-skill-low: var(--skill-low);
+  --color-warning-background: var(--warning-background);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-border: var(--warning-border);
+  --color-error-background: var(--error-background);
+  --color-error-foreground: var(--error-foreground);
+  --color-error-border: var(--error-border);
+  --color-success-background: var(--success-background);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-border: var(--success-border);
+  --color-overlay: var(--overlay);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background);
+  background-image:
+    radial-gradient(60rem 28rem at 8% -10%, var(--bg-radial-1), transparent 65%),
+    radial-gradient(60rem 28rem at 92% -12%, var(--bg-radial-2), transparent 65%),
+    linear-gradient(180deg, var(--bg-wash), var(--bg-wash));
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

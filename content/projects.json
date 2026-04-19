@@ -1,0 +1,462 @@
+{
+  "projects": [
+    {
+      "slug": "promptrend-llm-vulnerability-discovery",
+      "title": {
+        "en": "PrompTrend — LLM Vulnerability Discovery and Risk Scoring",
+        "fr": "PrompTrend — découverte de vulnérabilités LLM et scoring de risque"
+      },
+      "shortSummary": {
+        "en": "Continuous, community-driven discovery of jailbreak and prompt-injection risks across black-box LLM APIs.",
+        "fr": "Découverte continue et communautaire des risques de jailbreak et d'injection de prompts sur des API LLM en boîte noire."
+      },
+      "longSummary": {
+        "en": "Designed and implemented a pipeline that collects adversarial prompts, executes controlled evaluations against black-box models, scores risk with PVAF-style prioritization, and produces reproducible security reports for model governance.",
+        "fr": "Conçu et implémenté un pipeline qui collecte des prompts adverses, exécute des évaluations contrôlées contre des modèles en boîte noire, score le risque avec une priorisation de type PVAF et produit des rapports de sécurité reproductibles pour la gouvernance des modèles."
+      },
+      "role": {
+        "en": "Cybersecurity and AI Engineer",
+        "fr": "Ingénieur cybersécurité et IA"
+      },
+      "period": "2025",
+      "status": {
+        "en": "Published Research",
+        "fr": "Recherche publiée"
+      },
+      "tech": ["Python", "Docker", "Azure", "LLM Security", "Evaluation Pipelines"],
+      "tags": ["AI Security", "Adversarial Testing", "Research"],
+      "features": [
+        {
+          "en": "Adversarial testing for jailbreaks and prompt injection",
+          "fr": "Tests adverses pour jailbreaks et injection de prompts"
+        },
+        {
+          "en": "Risk scoring and triage pipeline for discovered vulnerabilities",
+          "fr": "Pipeline de scoring et de triage des vulnérabilités découvertes"
+        },
+        {
+          "en": "Containerized and reproducible evaluation workflows",
+          "fr": "Workflows d'évaluation conteneurisés et reproductibles"
+        }
+      ],
+      "technicalDetails": {
+        "en": "Python services orchestrated with Docker; transformation-aware tests against black-box APIs; scoring and reporting pipeline for risk triage and reproducibility.",
+        "fr": "Services Python orchestrés avec Docker ; tests sensibles aux transformations contre des API en boîte noire ; pipeline de scoring et reporting pour triage et reproductibilité."
+      },
+      "outcomes": [
+        {
+          "en": "Published as an arXiv research paper with a reproducible evaluation setup.",
+          "fr": "Publié comme article de recherche sur arXiv avec un dispositif d'évaluation reproductible."
+        },
+        {
+          "en": "Created a repeatable process for continuous model safety assessment.",
+          "fr": "Créé un processus reproductible pour l'évaluation continue de la sûreté des modèles."
+        }
+      ],
+      "links": {
+        "github": "https://github.com/theconsciouslab-ai/Promptrend",
+        "demo": "https://arxiv.org/abs/2507.19185",
+        "writeup": "https://arxiv.org/abs/2507.19185"
+      },
+      "visibility": "public",
+      "images": ["/images/projects/promptrend.png"]
+    },
+    {
+      "slug": "web-app-vulnerability-scanner",
+      "title": {
+        "en": "Web App Vulnerability Scanner",
+        "fr": "Scanner de vulnérabilités d'applications web"
+      },
+      "shortSummary": {
+        "en": "Automated web application scanning workflow for early detection of common security weaknesses.",
+        "fr": "Workflow de scan automatisé d'applications web pour détecter tôt les faiblesses de sécurité courantes."
+      },
+      "longSummary": {
+        "en": "Built a scanner-oriented security toolchain that crawls target surfaces, runs automated checks for common web risks, and generates prioritized findings so remediation can focus on the highest-impact issues first.",
+        "fr": "Construit une chaîne d'outils de sécurité orientée scanner qui parcourt les surfaces cibles, exécute des vérifications automatisées des risques web courants et génère des résultats priorisés pour concentrer la remédiation sur les problèmes à plus fort impact."
+      },
+      "role": {
+        "en": "Cybersecurity Engineer",
+        "fr": "Ingénieur cybersécurité"
+      },
+      "period": "2025",
+      "status": { "en": "Completed", "fr": "Terminé" },
+      "tech": ["Python", "Application Security", "Automation", "Reporting"],
+      "tags": ["AppSec", "Vulnerability Assessment", "Security Automation"],
+      "features": [
+        {
+          "en": "Automated target crawl and endpoint discovery",
+          "fr": "Crawl automatisé des cibles et découverte d'endpoints"
+        },
+        {
+          "en": "Checks for common web vulnerabilities and insecure configurations",
+          "fr": "Vérifications des vulnérabilités web courantes et des configurations non sécurisées"
+        },
+        {
+          "en": "Exportable findings report with severity-oriented prioritization",
+          "fr": "Rapport de résultats exportable avec priorisation par sévérité"
+        }
+      ],
+      "technicalDetails": {
+        "en": "The scanner runs a staged pipeline: target validation, crawl/discovery, rule-based checks, and report synthesis. Findings are normalized into a consistent severity model to support triage and fix planning.",
+        "fr": "Le scanner exécute un pipeline en étapes : validation de la cible, crawl/découverte, vérifications basées sur des règles et synthèse du rapport. Les résultats sont normalisés selon un modèle de sévérité cohérent pour faciliter triage et planification de correctifs."
+      },
+      "outcomes": [
+        {
+          "en": "Reduced manual validation effort for repeated security checks.",
+          "fr": "Réduit l'effort de validation manuelle pour les vérifications de sécurité répétées."
+        },
+        {
+          "en": "Improved remediation focus by grouping issues by severity and affected surface.",
+          "fr": "Amélioré le ciblage de la remédiation en regroupant les problèmes par sévérité et surface affectée."
+        }
+      ],
+      "links": {},
+      "visibility": "public",
+      "images": ["/images/projects/Vulnerability_scanner.png"]
+    },
+    {
+      "slug": "spotify-downloader",
+      "title": {
+        "en": "Spotify Downloader",
+        "fr": "Téléchargeur Spotify"
+      },
+      "shortSummary": {
+        "en": "Download-focused web workflow for processing Spotify track and playlist inputs with progress visibility.",
+        "fr": "Workflow web axé sur le téléchargement pour traiter des pistes et playlists Spotify avec visibilité sur la progression."
+      },
+      "longSummary": {
+        "en": "Implemented a full-stack downloader flow that accepts Spotify links, validates and resolves media metadata server-side, and executes queued download tasks while exposing real-time progress and error states to users.",
+        "fr": "Implémenté un flux de téléchargement full-stack qui accepte des liens Spotify, valide et résout les métadonnées média côté serveur, et exécute des tâches de téléchargement en file en exposant progression temps réel et états d'erreur aux utilisateurs."
+      },
+      "role": {
+        "en": "Full-Stack Engineer",
+        "fr": "Ingénieur full-stack"
+      },
+      "period": "2024",
+      "status": { "en": "Completed", "fr": "Terminé" },
+      "tech": ["Node.js", "React", "TypeScript", "REST API"],
+      "tags": ["Web App", "Media Processing", "Full Stack"],
+      "features": [
+        {
+          "en": "Track and playlist URL intake with validation",
+          "fr": "Saisie d'URL de pistes et playlists avec validation"
+        },
+        {
+          "en": "Queued processing pipeline for reliable downloads",
+          "fr": "Pipeline de traitement en file pour des téléchargements fiables"
+        },
+        {
+          "en": "Progress and failure-state feedback in the UI",
+          "fr": "Retour de progression et d'états d'échec dans l'interface"
+        }
+      ],
+      "technicalDetails": {
+        "en": "The application separates UI interaction from backend processing using an API-driven workflow and queued tasks, which improves resilience for multi-item downloads and makes retries observable.",
+        "fr": "L'application sépare l'interaction UI du traitement back-end via un workflow piloté par API et des tâches en file, ce qui améliore la résilience des téléchargements multi-éléments et rend les reprises observables."
+      },
+      "outcomes": [
+        {
+          "en": "Delivered a stable user flow for single-track and playlist download requests.",
+          "fr": "Livré un flux utilisateur stable pour les demandes de téléchargement de pistes et de playlists."
+        },
+        {
+          "en": "Improved reliability by isolating long-running processing from direct UI actions.",
+          "fr": "Amélioré la fiabilité en isolant les traitements longs des actions UI directes."
+        }
+      ],
+      "links": {},
+      "visibility": "public",
+      "images": ["/images/projects/Spotify_Song_downloader (1).jpg", "/images/projects/Spotify_Song_downloader (2).jpg", "/images/projects/Spotify_Song_downloader (3).jpg", "/images/projects/Spotify_Song_downloader (4).jpg"]
+    },
+    {
+      "slug": "equation-solver-chatbot",
+      "title": {
+        "en": "Equation Solver Chat Bot",
+        "fr": "Chatbot résolveur d'équations"
+      },
+      "shortSummary": {
+        "en": "Containerized chatbot for equation solving with reliable backend execution.",
+        "fr": "Chatbot conteneurisé pour la résolution d'équations avec une exécution back-end fiable."
+      },
+      "longSummary": {
+        "en": "Built a chat-based math assistant backed by Python services and containerized deployment, with emphasis on predictable execution and operational simplicity.",
+        "fr": "Construit un assistant mathématique conversationnel appuyé par des services Python et un déploiement conteneurisé, en privilégiant l'exécution prévisible et la simplicité opérationnelle."
+      },
+      "role": {
+        "en": "Software Engineer",
+        "fr": "Ingénieur logiciel"
+      },
+      "period": "2024",
+      "status": { "en": "Completed", "fr": "Terminé" },
+      "tech": ["Python", "Docker", "Vue.js"],
+      "tags": ["NLP", "Containerization", "Full Stack"],
+      "features": [
+        {
+          "en": "Real-time equation solving workflow",
+          "fr": "Workflow de résolution d'équations en temps réel"
+        },
+        {
+          "en": "User-friendly chat interface",
+          "fr": "Interface de chat conviviale"
+        },
+        {
+          "en": "Containerized deployment for isolated computation",
+          "fr": "Déploiement conteneurisé pour un calcul isolé"
+        }
+      ],
+      "technicalDetails": {
+        "en": "Python backend for expression processing and response generation, packaged in Docker to ensure portability and environment consistency.",
+        "fr": "Back-end Python pour le traitement des expressions et la génération des réponses, packagé dans Docker pour garantir portabilité et cohérence d'environnement."
+      },
+      "outcomes": [
+        {
+          "en": "Delivered a working chatbot experience for solving equations in real time.",
+          "fr": "Livré une expérience chatbot fonctionnelle pour résoudre des équations en temps réel."
+        },
+        {
+          "en": "Reduced environment drift by standardizing execution with Docker.",
+          "fr": "Réduit la dérive d'environnement en standardisant l'exécution avec Docker."
+        }
+      ],
+      "links": {
+        "github": "https://github.com/mootezaloui/equation-solver-chatbot",
+        "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7197166266959171585/"
+      },
+      "visibility": "public",
+      "images": ["/images/projects/equation-solver.jpg"]
+    },
+    {
+      "slug": "virus-propagation-simulation",
+      "title": {
+        "en": "Virus Propagation Simulation Covid-19",
+        "fr": "Simulation de propagation de virus Covid-19"
+      },
+      "shortSummary": {
+        "en": "Graph-theory simulation of epidemic spread and control strategy effects.",
+        "fr": "Simulation basée sur la théorie des graphes de la propagation épidémique et des effets des stratégies de contrôle."
+      },
+      "longSummary": {
+        "en": "Developed stochastic simulations using graph structures and probability models to analyze transmission dynamics, visualize spread patterns, and test containment strategies.",
+        "fr": "Développé des simulations stochastiques à base de structures de graphes et de modèles probabilistes pour analyser la dynamique de transmission, visualiser les schémas de propagation et tester des stratégies de confinement."
+      },
+      "role": {
+        "en": "Software Engineer",
+        "fr": "Ingénieur logiciel"
+      },
+      "period": "2023",
+      "status": { "en": "Completed", "fr": "Terminé" },
+      "tech": ["Python", "Graph Theory", "Probability", "Data Visualization"],
+      "tags": ["Simulation", "Modeling", "Algorithms"],
+      "features": [
+        {
+          "en": "Realistic spread modeling over graph structures",
+          "fr": "Modélisation réaliste de la propagation sur des structures de graphes"
+        },
+        {
+          "en": "Simulation result visualization",
+          "fr": "Visualisation des résultats de simulation"
+        },
+        {
+          "en": "Control-strategy optimization experiments",
+          "fr": "Expérimentations d'optimisation de stratégies de contrôle"
+        }
+      ],
+      "technicalDetails": {
+        "en": "Graph-based algorithms combined with stochastic processes to model propagation under changing constraints and intervention scenarios.",
+        "fr": "Algorithmes sur graphes combinés à des processus stochastiques pour modéliser la propagation sous des contraintes variables et des scénarios d'intervention."
+      },
+      "outcomes": [
+        {
+          "en": "Produced interpretable simulation outputs for comparing containment strategies.",
+          "fr": "Produit des résultats de simulation interprétables pour comparer les stratégies de confinement."
+        },
+        {
+          "en": "Demonstrated algorithmic reasoning through probabilistic modeling.",
+          "fr": "Démontré un raisonnement algorithmique via la modélisation probabiliste."
+        }
+      ],
+      "links": {
+        "github": "https://github.com/Gathaa/GraphTheory"
+      },
+      "visibility": "public",
+      "images": ["/images/projects/virus-propagation.png"]
+    },
+    {
+      "slug": "law-firm-management-software",
+      "title": {
+        "en": "Ordinay - Desktop Legal Operations Platform",
+        "fr": "Ordinay — plateforme desktop d'opérations juridiques"
+      },
+      "shortSummary": {
+        "en": "Desktop-first legal operations platform (Electron + React + Express + SQLite) with AI-assisted workflows under explicit safety controls.",
+        "fr": "Plateforme d'opérations juridiques desktop-first (Electron + React + Express + SQLite) avec des workflows assistés par IA sous contrôles de sécurité explicites."
+      },
+      "longSummary": {
+        "en": "Designed and evolved Ordinay as a legal operations runtime that centralizes clients, dossiers, lawsuits, sessions, tasks, missions, documents, billing, and notifications. Built an Agent v2 SSE runtime with plan/confirm/execute mutation gating so legal-office teams can use AI assistance without losing operational control.",
+        "fr": "Conçu et fait évoluer Ordinay comme runtime d'opérations juridiques centralisant clients, dossiers, procès, audiences, tâches, missions, documents, facturation et notifications. Construit un runtime SSE Agent v2 avec un gating plan/confirm/execute sur les mutations pour permettre aux équipes juridiques d'utiliser l'assistance IA sans perdre le contrôle opérationnel."
+      },
+      "role": {
+        "en": "Founding Full-Stack and AI Systems Engineer",
+        "fr": "Ingénieur fondateur full-stack et systèmes IA"
+      },
+      "period": "2024 - 2026",
+      "status": {
+        "en": "Active Development",
+        "fr": "Développement actif"
+      },
+      "tech": ["Electron", "React", "Node.js", "Express", "SQLite", "TypeScript", "SSE", "LLM Agent Runtime"],
+      "tags": ["LegalTech", "Desktop Systems", "Agentic AI", "Application Security", "Workflow Automation"],
+      "features": [
+        {
+          "en": "Client, dossier, and lawsuit lifecycle management in a unified desktop workflow",
+          "fr": "Gestion du cycle de vie clients, dossiers et procès dans un workflow desktop unifié"
+        },
+        {
+          "en": "Document, session, mission, task, and financial entry orchestration with domain-aware relationships",
+          "fr": "Orchestration des documents, audiences, missions, tâches et écritures financières avec des relations métier explicites"
+        },
+        {
+          "en": "Agent v2 streaming assistant with plan/confirm/execute safety model and runtime control flags",
+          "fr": "Assistant streaming Agent v2 avec modèle de sûreté plan/confirm/execute et flags de contrôle runtime"
+        }
+      ],
+      "technicalDetails": {
+        "en": "React renderer and Electron IPC bridge connect to an Express backend with SQLite as canonical storage. Domain invariants are enforced in schema and services (ownership XOR rules, constrained status vocabularies, and referential integrity). Agent v2 runs as an SSE loop with tool categories, permission gates, safe-mode toggles, and auditable mutation execution.",
+        "fr": "Le renderer React et le pont IPC Electron se connectent à un back-end Express avec SQLite comme stockage canonique. Les invariants métier sont appliqués dans le schéma et les services (règles XOR de propriété, vocabulaires de statut contraints, intégrité référentielle). Agent v2 tourne en boucle SSE avec catégories d'outils, gates de permission, bascules safe-mode et exécution de mutations auditable."
+      },
+      "outcomes": [
+        {
+          "en": "Consolidated fragmented legal-office workflows into one local-first runtime with resilient core CRUD operations.",
+          "fr": "Consolidé des workflows de cabinet juridique fragmentés en un runtime local-first avec des opérations CRUD cœur résilientes."
+        },
+        {
+          "en": "Implemented a controllable AI assistance layer where high-impact actions stay confirmation-gated and traceable.",
+          "fr": "Implémenté une couche d'assistance IA contrôlable où les actions à fort impact restent soumises à confirmation et traçables."
+        },
+        {
+          "en": "Demonstrated production-style boundary design across desktop UI, backend services, and agent runtime modules.",
+          "fr": "Démontré une conception de frontières de type production entre UI desktop, services back-end et modules de runtime agent."
+        }
+      ],
+      "links": {
+        "github": "https://github.com/mootezaloui/ordinay",
+        "writeup": "https://github.com/mootezaloui/ordinay/blob/main/docs/PROJECT_VISION.md"
+      },
+      "visibility": "public",
+      "images": ["/images/projects/law-firm.png", "/images/projects/law-firm-alt.png"]
+    },
+    {
+      "slug": "messenger-live-messaging",
+      "title": {
+        "en": "Messenger-Live Messaging Application",
+        "fr": "Application de messagerie en direct Messenger-Live"
+      },
+      "shortSummary": {
+        "en": "Slack-like real-time messaging platform with channels and presence.",
+        "fr": "Plateforme de messagerie en temps réel façon Slack avec canaux et présence."
+      },
+      "longSummary": {
+        "en": "Built a channel-based real-time messaging app with authentication, user profiles, and websocket-powered event delivery for responsive communication.",
+        "fr": "Construit une application de messagerie en temps réel basée sur des canaux avec authentification, profils utilisateurs et diffusion d'événements via WebSocket pour une communication réactive."
+      },
+      "role": {
+        "en": "Full-Stack Engineer",
+        "fr": "Ingénieur full-stack"
+      },
+      "period": "2023",
+      "status": { "en": "Completed", "fr": "Terminé" },
+      "tech": ["Node.js", "React", "WebSocket", "MongoDB"],
+      "tags": ["Realtime", "Collaboration", "Full Stack"],
+      "features": [
+        {
+          "en": "Real-time channel messaging",
+          "fr": "Messagerie de canaux en temps réel"
+        },
+        {
+          "en": "User authentication and profile management",
+          "fr": "Authentification et gestion des profils utilisateurs"
+        },
+        {
+          "en": "Channel creation and moderation",
+          "fr": "Création et modération de canaux"
+        }
+      ],
+      "technicalDetails": {
+        "en": "Node.js services with WebSocket event handling, React client for real-time updates, and MongoDB persistence for messages and user context.",
+        "fr": "Services Node.js avec gestion d'événements WebSocket, client React pour les mises à jour temps réel et persistance MongoDB pour les messages et le contexte utilisateur."
+      },
+      "outcomes": [
+        {
+          "en": "Delivered low-latency bidirectional messaging capabilities.",
+          "fr": "Livré des capacités de messagerie bidirectionnelle à faible latence."
+        },
+        {
+          "en": "Implemented collaborative channel workflows comparable to team chat products.",
+          "fr": "Implémenté des workflows de canaux collaboratifs comparables aux produits de chat d'équipe."
+        }
+      ],
+      "links": {
+        "github": "https://github.com/yassin014/softproject"
+      },
+      "visibility": "public",
+      "images": ["/images/projects/messenger-live.png"]
+    },
+    {
+      "slug": "tutoring-applications",
+      "title": {
+        "en": "Tutoring Applications",
+        "fr": "Applications de tutorat"
+      },
+      "shortSummary": {
+        "en": "Cross-platform tutoring solution with scheduling, messaging, and admin tracking.",
+        "fr": "Solution de tutorat multiplateforme avec planification, messagerie et suivi administratif."
+      },
+      "longSummary": {
+        "en": "Implemented a tutoring ecosystem with student and tutor workflows, live chat, booking, and administrative monitoring across web and mobile experiences.",
+        "fr": "Implémenté un écosystème de tutorat avec des workflows étudiants et tuteurs, chat en direct, réservation et supervision administrative sur les expériences web et mobile."
+      },
+      "role": {
+        "en": "Full-Stack Engineer",
+        "fr": "Ingénieur full-stack"
+      },
+      "period": "2023",
+      "status": { "en": "Completed", "fr": "Terminé" },
+      "tech": ["Node.js", "React", "React Native", "MySQL", "Express.js"],
+      "tags": ["EdTech", "Mobile", "Full Stack"],
+      "features": [
+        {
+          "en": "Live chat between students and tutors",
+          "fr": "Chat en direct entre étudiants et tuteurs"
+        },
+        {
+          "en": "Scheduling and booking management",
+          "fr": "Gestion de la planification et des réservations"
+        },
+        {
+          "en": "Administrative dashboard for tracking sessions",
+          "fr": "Tableau de bord administratif pour le suivi des sessions"
+        }
+      ],
+      "technicalDetails": {
+        "en": "React Native mobile client with Node.js and Express backend; MySQL schema for users, session availability, and booking operations.",
+        "fr": "Client mobile React Native avec back-end Node.js et Express ; schéma MySQL pour utilisateurs, disponibilités de sessions et opérations de réservation."
+      },
+      "outcomes": [
+        {
+          "en": "Enabled end-to-end tutor-student coordination in one system.",
+          "fr": "Permis la coordination tuteur-étudiant de bout en bout dans un seul système."
+        },
+        {
+          "en": "Unified web and mobile workflows around a shared backend.",
+          "fr": "Unifié les workflows web et mobile autour d'un back-end partagé."
+        }
+      ],
+      "links": {
+        "github": "https://github.com/mootezaloui/TutoringPROJECT"
+      },
+      "visibility": "public",
+      "images": ["/images/projects/tutoring.png"]
+    }
+  ]
+}

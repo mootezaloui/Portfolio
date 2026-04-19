@@ -1,0 +1,35 @@
+{
+  "publications": [
+    {
+      "slug": "promptrend-arxiv-2025",
+      "title": {
+        "en": "PrompTrend: Continuous Community-Driven LLM Evaluation",
+        "fr": "PrompTrend : évaluation continue et communautaire des LLM"
+      },
+      "venue": "arXiv",
+      "year": "2025",
+      "summary": {
+        "en": "Proposed a transformation-aware testing methodology and the PVAF scoring metric for evaluating LLM behavioral consistency across semantically equivalent but structurally varied prompts.",
+        "fr": "Proposé une méthodologie de test sensible aux transformations et la métrique PVAF pour évaluer la cohérence comportementale des LLM sur des prompts sémantiquement équivalents mais structurellement variés."
+      },
+      "highlights": [
+        {
+          "en": "Introduced PVAF — a prompt-variation-aware scoring metric that surfaces failure modes missed by static benchmarks.",
+          "fr": "Introduction de PVAF — une métrique de scoring sensible aux variations de prompts qui révèle des modes de défaillance ignorés par les benchmarks statiques."
+        },
+        {
+          "en": "Built end-to-end pipelines covering prompt generation, adversarial transformation, response collection, and multi-dimensional scoring.",
+          "fr": "Construction de pipelines de bout en bout couvrant génération de prompts, transformation adverse, collecte de réponses et scoring multidimensionnel."
+        },
+        {
+          "en": "Ran large-scale behavioral analysis across dynamic prompt scenarios against black-box LLM APIs.",
+          "fr": "Réalisation d'analyses comportementales à grande échelle sur des scénarios de prompts dynamiques contre des API LLM en boîte noire."
+        }
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2507.19185",
+        "code": "https://github.com/theconsciouslab-ai/Promptrend"
+      }
+    }
+  ]
+}

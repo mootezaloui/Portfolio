@@ -1,0 +1,200 @@
+.viewport {
+  position: fixed;
+  inset: 0;
+  z-index: 45;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.scene {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  gap: 0.6rem;
+  transform: translate3d(calc(100vw - 8rem), calc(100vh - 13rem), 0);
+  will-change: transform;
+}
+
+.collapsed .bubble {
+  display: none;
+}
+
+.restAnchor {
+  position: absolute;
+  right: 1.75rem;
+  bottom: 1.75rem;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
+.spriteButton {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.spriteButton:focus-visible {
+  outline: 2px solid #00FF88;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.sprite {
+  display: block;
+  width: 96px;
+  height: 144px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.bubble {
+  max-width: 18rem;
+  background: #0d1117;
+  color: #00FF88;
+  border: 1px solid #2B2F36;
+  border-radius: 6px;
+  padding: 0.65rem 0.8rem;
+  box-shadow: 0 0 16px rgba(0, 255, 136, 0.18);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  position: relative;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  right: 1.6rem;
+  bottom: -7px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #0d1117;
+}
+
+.bubble::before {
+  content: "";
+  position: absolute;
+  right: 1.55rem;
+  bottom: -9px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #2B2F36;
+}
+
+.bubbleHidden {
+  display: none;
+}
+
+.bubbleHeader {
+  margin: 0 0 0.3rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #C4A962;
+}
+
+.bubbleText {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #00FF88;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.bubbleActions {
+  margin-top: 0.55rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.bubbleLink {
+  border: 1px solid #00FF88;
+  border-radius: 3px;
+  background: transparent;
+  padding: 0.22rem 0.6rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #00FF88;
+  text-decoration: none;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+}
+
+.bubbleLink:hover,
+.bubbleLink:focus-visible {
+  background: rgba(0, 255, 136, 0.12);
+}
+
+.bubbleButton {
+  border: 1px solid #2B2F36;
+  border-radius: 3px;
+  background: transparent;
+  padding: 0.22rem 0.55rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #8b949e;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+}
+
+.bubbleButton:hover,
+.bubbleButton:focus-visible {
+  color: #00FF88;
+  border-color: #00FF88;
+}
+
+.reopen {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1px solid #2B2F36;
+  border-radius: 50%;
+  background: #0d1117;
+  color: #00FF88;
+  font-size: 0.95rem;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.35);
+}
+
+.reopen:focus-visible {
+  outline: 2px solid #00FF88;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .restAnchor {
+    right: 1.75rem;
+    bottom: 1.75rem;
+  }
+
+  .sprite {
+    width: 72px;
+    height: 108px;
+  }
+
+  .bubble {
+    max-width: 15rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sprite {
+    animation: none !important;
+  }
+}

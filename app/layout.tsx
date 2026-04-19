@@ -7,6 +7,7 @@ import { MascotBehaviorTracker } from "@/components/twin/MascotBehaviorTracker";
 import { TwinMascot } from "@/components/twin/TwinMascot";
 import { getDictionary } from "@/lib/i18n/dictionary";
 import { getLocale } from "@/lib/i18n/getLocale";
+import { SITE_URL, withBasePath } from "@/lib/site/runtime";
 
 import "./globals.css";
 
@@ -19,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   const dict = getDictionary(locale);
   return {
-    metadataBase: new URL("https://tazou-runtime.vercel.app"),
+    metadataBase: new URL(SITE_URL),
     title: {
       default: dict.meta.siteTitle,
       template: `%s | ${dict.meta.siteTitle}`,
@@ -37,18 +38,18 @@ export async function generateMetadata(): Promise<Metadata> {
       "Tazou Runtime",
     ],
     alternates: {
-      canonical: "/",
+      canonical: withBasePath("/"),
     },
     openGraph: {
       title: dict.meta.siteTitle,
       description: dict.meta.ogDescription,
-      url: "/",
+      url: withBasePath("/"),
       siteName: dict.meta.siteTitle,
       locale: OG_LOCALE[locale] ?? "en_US",
       type: "website",
       images: [
         {
-          url: "/avatar.png",
+          url: withBasePath("/avatar.png"),
           width: 1200,
           height: 1200,
           alt: `${dict.meta.siteTitle} preview`,
@@ -59,16 +60,16 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: dict.meta.siteTitle,
       description: dict.meta.twitterDescription,
-      images: ["/avatar.png"],
+      images: [withBasePath("/avatar.png")],
     },
     robots: {
       index: true,
       follow: true,
     },
     icons: {
-      icon: "/icon.png",
-      shortcut: "/icon.png",
-      apple: "/icon.png",
+      icon: withBasePath("/icon.png"),
+      shortcut: withBasePath("/icon.png"),
+      apple: withBasePath("/icon.png"),
     },
   };
 }

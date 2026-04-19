@@ -22,7 +22,6 @@ export function ExploreBy({ lens, locale }: ExploreByProps) {
       icon: Timer,
       href: buildHomeTabHref("why-me", lens),
       cta: dict.fastOverviewCta,
-      external: false as const,
     },
     {
       title: dict.deepDiveTitle,
@@ -31,7 +30,6 @@ export function ExploreBy({ lens, locale }: ExploreByProps) {
       icon: Microscope,
       href: buildHomeTabHref("projects", lens),
       cta: dict.deepDiveCta,
-      external: false as const,
     },
     {
       title: dict.assistantTitle,
@@ -40,7 +38,6 @@ export function ExploreBy({ lens, locale }: ExploreByProps) {
       icon: MessageSquare,
       href: buildLensHref("/twin", lens),
       cta: dict.assistantCta,
-      external: true as const,
     },
   ];
 
@@ -85,22 +82,10 @@ export function ExploreBy({ lens, locale }: ExploreByProps) {
             </>
           );
 
-          if (path.external) {
-            return (
-              <Link
-                key={path.title}
-                href={path.href as Route}
-                className={cardClasses}
-              >
-                {content}
-              </Link>
-            );
-          }
-
           return (
-            <a key={path.title} href={path.href} className={cardClasses}>
+            <Link key={path.title} href={path.href as Route} className={cardClasses}>
               {content}
-            </a>
+            </Link>
           );
         })}
       </div>

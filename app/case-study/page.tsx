@@ -15,6 +15,7 @@ import {
   getLensFromSearchParams,
   getRoleLensDefinition,
 } from "@/lib/lens/roleLens";
+import { withBasePath } from "@/lib/site/runtime";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
@@ -23,15 +24,15 @@ export async function generateMetadata(): Promise<Metadata> {
     title: dict.metaTitle,
     description: dict.metaDescription,
     alternates: {
-      canonical: "/case-study",
+      canonical: withBasePath("/case-study"),
     },
     openGraph: {
       title: dict.ogTitle,
       description: dict.ogDescription,
-      url: "/case-study",
+      url: withBasePath("/case-study"),
       images: [
         {
-          url: "/avatar.png",
+          url: withBasePath("/avatar.png"),
           width: 1200,
           height: 1200,
           alt: `${dict.ogTitle} preview`,

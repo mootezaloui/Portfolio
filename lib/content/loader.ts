@@ -9,6 +9,7 @@ import {
   pickLocalizedArray,
   pickLocalizedOptional,
 } from "@/lib/i18n/localized";
+import { withBasePath } from "../site/runtime";
 
 import {
   certificationsSchema,
@@ -119,6 +120,7 @@ function resolveProject(raw: RawProjectDocument, locale: Locale): Project {
     features: pickLocalizedArray(raw.features, locale),
     technicalDetails: pickLocalized(raw.technicalDetails, locale),
     outcomes: pickLocalizedArray(raw.outcomes, locale),
+    images: raw.images.map((image) => withBasePath(image)),
   };
 }
 
@@ -180,6 +182,7 @@ function resolveCertification(
   return {
     ...raw,
     title: pickLocalized(raw.title, locale),
+    image: withBasePath(raw.image),
   };
 }
 

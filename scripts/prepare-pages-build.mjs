@@ -29,6 +29,16 @@ async function collectRouteFiles(dir, files) {
 }
 
 async function main() {
+  const generatedTypeDirs = [
+    path.join(repoRoot, ".next-dev", "types"),
+    path.join(repoRoot, ".next", "types"),
+  ];
+  for (const generatedTypeDir of generatedTypeDirs) {
+    if (await exists(generatedTypeDir)) {
+      await fs.rm(generatedTypeDir, { recursive: true, force: true });
+    }
+  }
+
   const routeFiles = [];
   if (await exists(appDir)) {
     await collectRouteFiles(appDir, routeFiles);

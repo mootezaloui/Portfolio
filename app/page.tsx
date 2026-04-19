@@ -53,6 +53,7 @@ export default async function Home({ searchParams }: HomePageProps) {
   const resolvedSearchParams = isPagesBuild ? {} : await searchParams;
   const lens = getLensFromSearchParams(resolvedSearchParams);
   const activeTab = getHomeTabFromSearchParams(resolvedSearchParams);
+  const showAllSections = isPagesBuild;
   const locale = await getLocale();
   const dict = getDictionary(locale);
   const experienceDict = dict.experience;
@@ -184,7 +185,16 @@ export default async function Home({ searchParams }: HomePageProps) {
     id: "overview",
     label: dict.nav.overview,
   };
-  const onPageItems = [baseOverviewItem, ...(onPageItemsByTab[activeTab] ?? [])];
+  const allTabItems = [
+    ...(onPageItemsByTab["why-me"] ?? []),
+    ...(onPageItemsByTab.projects ?? []),
+    ...(onPageItemsByTab.experience ?? []),
+    ...(onPageItemsByTab.skills ?? []),
+    ...(onPageItemsByTab.contact ?? []),
+  ];
+  const onPageItems = showAllSections
+    ? [baseOverviewItem, ...allTabItems]
+    : [baseOverviewItem, ...(onPageItemsByTab[activeTab] ?? [])];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -209,19 +219,23 @@ export default async function Home({ searchParams }: HomePageProps) {
           <OnThisPageRail title={dict.nav.onThisPage} items={onPageItems} />
         </aside>
         <Hero profile={profile} lens={lens} locale={locale} />
-        <LensSelector
-          currentLens={lens}
-          basePath={buildHomeTabHref(activeTab, "general")}
-          locale={locale}
-        />
-        <LensContextBanner lens={lens} locale={locale} />
-        {activeTab === "why-me" ? (
+        {!showAllSections ? (
+          <>
+            <LensSelector
+              currentLens={lens}
+              basePath={buildHomeTabHref(activeTab, "general")}
+              locale={locale}
+            />
+            <LensContextBanner lens={lens} locale={locale} />
+          </>
+        ) : null}
+        {showAllSections || activeTab === "why-me" ? (
           <>
             <About profile={profile} lens={lens} locale={locale} />
             <ExploreBy lens={lens} locale={locale} />
           </>
         ) : null}
-        {activeTab === "projects" ? (
+        {showAllSections || activeTab === "projects" ? (
           <>
             <Projects
               projects={projects}
@@ -232,7 +246,7 @@ export default async function Home({ searchParams }: HomePageProps) {
             <Research publications={publications} locale={locale} />
           </>
         ) : null}
-        {activeTab === "experience" ? (
+        {showAllSections || activeTab === "experience" ? (
           <>
             <Experience
               experiences={workExperiences}
@@ -258,13 +272,15 @@ export default async function Home({ searchParams }: HomePageProps) {
             <BetaPrograms programs={betaPrograms} locale={locale} />
           </>
         ) : null}
-        {activeTab === "skills" ? (
+        {showAllSections || activeTab === "skills" ? (
           <>
             <Skills categories={categories} lens={lens} locale={locale} />
             <Certifications certifications={certifications} locale={locale} />
           </>
         ) : null}
-        {activeTab === "contact" ? <Contact profile={profile} locale={locale} /> : null}
+        {showAllSections || activeTab === "contact" ? (
+          <Contact profile={profile} locale={locale} />
+        ) : null}
       </main>
       <Footer locale={locale} />
     </div>

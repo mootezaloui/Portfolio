@@ -15,6 +15,7 @@ import {
 import { buildHomeTabHref } from "@/lib/navigation/homeTabs";
 import { buildProjectJsonLd } from "@/lib/agents/profile";
 import { ProjectHeroImage } from "@/components/projects/ProjectHeroImage";
+import { withBasePath } from "@/lib/site/runtime";
 
 const isPagesBuild = process.env.GITHUB_PAGES === "true";
 
@@ -41,18 +42,18 @@ export async function generateMetadata({
     };
   }
 
-  const previewImage = project.images[0] ?? "/avatar.png";
+  const previewImage = project.images[0] ?? withBasePath("/avatar.png");
 
   return {
     title: project.title,
     description: project.shortSummary,
     alternates: {
-      canonical: `/projects/${project.slug}`,
+      canonical: withBasePath(`/projects/${project.slug}`),
     },
     openGraph: {
       title: project.title,
       description: project.shortSummary,
-      url: `/projects/${project.slug}`,
+      url: withBasePath(`/projects/${project.slug}`),
       type: "article",
       images: [
         {

@@ -1,4 +1,5 @@
 import type { RoleLens } from "@/lib/lens/roleLens";
+import { withBasePath } from "../site/runtime";
 
 const FALLBACK_LENS: RoleLens = "general";
 
@@ -15,7 +16,8 @@ function resolveLens(lens: RoleLens): RoleLens {
 
 export function getResumeHref(lens: RoleLens): string {
   const resolved = resolveLens(lens);
-  return RESUME_BY_LENS[resolved] ?? RESUME_BY_LENS[FALLBACK_LENS]!;
+  const path = RESUME_BY_LENS[resolved] ?? RESUME_BY_LENS[FALLBACK_LENS]!;
+  return withBasePath(path);
 }
 
 export function getResumeDownloadName(lens: RoleLens): string {

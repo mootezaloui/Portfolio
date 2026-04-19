@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import type { Route } from "next";
 import Link from "next/link";
@@ -8,6 +9,7 @@ import type { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionary";
 import { buildLensHref, type RoleLens } from "@/lib/lens/roleLens";
 import { buildHomeTabHref, type HomeTab } from "@/lib/navigation/homeTabs";
+import { IS_STATIC_EXPORT } from "@/lib/site/runtime";
 import { cn } from "@/lib/utils";
 
 interface NavProps {
@@ -17,6 +19,7 @@ interface NavProps {
 }
 
 export function Nav({ lens, activeTab, locale }: NavProps) {
+  const [hashTab, setHashTab] = useState<HomeTab>(activeTab);
   const dict = getDictionary(locale).nav;
   const navItems = [
     { tab: "why-me" as const, label: dict.whyMe },
@@ -25,6 +28,29 @@ export function Nav({ lens, activeTab, locale }: NavProps) {
     { tab: "skills" as const, label: dict.skills },
     { tab: "contact" as const, label: dict.contact },
   ];
+  const selectedTab = IS_STATIC_EXPORT ? hashTab : activeTab;
+
+  useEffect(() => {
+    if (!IS_STATIC_EXPORT || typeof window === "undefined") {
+      return;
+    }
+
+    const resolveHashTab = () => {
+      const hash = window.location.hash.replace(/^#/, "");
+      const mapped =
+        hash === "projects" ||
+        hash === "experience" ||
+        hash === "skills" ||
+        hash === "contact"
+          ? hash
+          : "why-me";
+      setHashTab(mapped);
+    };
+
+    resolveHashTab();
+    window.addEventListener("hashchange", resolveHashTab);
+    return () => window.removeEventListener("hashchange", resolveHashTab);
+  }, []);
 
   return (
     <nav
@@ -33,7 +59,7 @@ export function Nav({ lens, activeTab, locale }: NavProps) {
     >
       <ul className="flex flex-wrap items-center gap-3 text-sm">
         {navItems.map((item) => {
-          const isActive = activeTab === item.tab;
+          const isActive = selectedTab === item.tab;
           return (
             <li key={item.tab} className="relative">
               <Link

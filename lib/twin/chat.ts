@@ -164,6 +164,10 @@ async function generateWithProviders(
   }
 
   if (fallbackProvider && fallbackProvider.isConfigured()) {
+    console.warn(
+      "[twin-chat] external providers failed, using fallback:",
+      errors.join(" | ")
+    );
     try {
       return await fallbackProvider.generate({
         prompt,

@@ -1,5 +1,6 @@
 import { LensContextBanner } from "@/components/lens/LensContextBanner";
 import { LensSelector } from "@/components/lens/LensSelector";
+import { HomeTabPanels } from "@/components/home/HomeTabPanels";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { OnThisPageRail, type OnPageItem } from "@/components/layout/OnThisPageRail";
@@ -53,7 +54,6 @@ export default async function Home({ searchParams }: HomePageProps) {
   const resolvedSearchParams = isPagesBuild ? {} : await searchParams;
   const lens = getLensFromSearchParams(resolvedSearchParams);
   const activeTab = getHomeTabFromSearchParams(resolvedSearchParams);
-  const showAllSections = isPagesBuild;
   const locale = await getLocale();
   const dict = getDictionary(locale);
   const experienceDict = dict.experience;
@@ -192,7 +192,7 @@ export default async function Home({ searchParams }: HomePageProps) {
     ...(onPageItemsByTab.skills ?? []),
     ...(onPageItemsByTab.contact ?? []),
   ];
-  const onPageItems = showAllSections
+  const onPageItems = isPagesBuild
     ? [baseOverviewItem, ...allTabItems]
     : [baseOverviewItem, ...(onPageItemsByTab[activeTab] ?? [])];
 
@@ -219,7 +219,7 @@ export default async function Home({ searchParams }: HomePageProps) {
           <OnThisPageRail title={dict.nav.onThisPage} items={onPageItems} />
         </aside>
         <Hero profile={profile} lens={lens} locale={locale} />
-        {!showAllSections ? (
+        {!isPagesBuild ? (
           <>
             <LensSelector
               currentLens={lens}
@@ -229,58 +229,60 @@ export default async function Home({ searchParams }: HomePageProps) {
             <LensContextBanner lens={lens} locale={locale} />
           </>
         ) : null}
-        {showAllSections || activeTab === "why-me" ? (
-          <>
-            <About profile={profile} lens={lens} locale={locale} />
-            <ExploreBy lens={lens} locale={locale} />
-          </>
-        ) : null}
-        {showAllSections || activeTab === "projects" ? (
-          <>
-            <Projects
-              projects={projects}
-              lens={lens}
-              profile={profile}
-              locale={locale}
-            />
-            <Research publications={publications} locale={locale} />
-          </>
-        ) : null}
-        {showAllSections || activeTab === "experience" ? (
-          <>
-            <Experience
-              experiences={workExperiences}
-              lens={lens}
-              locale={locale}
-              profile={profile}
-              id="experience"
-              title={experienceDict.title}
-              description={experienceDict.workDescription}
-              showCta
-            />
-            <Education education={education} locale={locale} />
-            <Experience
-              experiences={leadershipExperiences}
-              lens={lens}
-              locale={locale}
-              id="leadership"
-              title={experienceDict.leadershipTitle}
-              description={experienceDict.leadershipDescription}
-              showLensNote={false}
-              showCta={false}
-            />
-            <BetaPrograms programs={betaPrograms} locale={locale} />
-          </>
-        ) : null}
-        {showAllSections || activeTab === "skills" ? (
-          <>
-            <Skills categories={categories} lens={lens} locale={locale} />
-            <Certifications certifications={certifications} locale={locale} />
-          </>
-        ) : null}
-        {showAllSections || activeTab === "contact" ? (
-          <Contact profile={profile} locale={locale} />
-        ) : null}
+        <HomeTabPanels
+          initialTab={activeTab}
+          useHashNavigation={isPagesBuild}
+          whyMe={
+            <>
+              <About profile={profile} lens={lens} locale={locale} />
+              <ExploreBy lens={lens} locale={locale} />
+            </>
+          }
+          projects={
+            <>
+              <Projects
+                projects={projects}
+                lens={lens}
+                profile={profile}
+                locale={locale}
+              />
+              <Research publications={publications} locale={locale} />
+            </>
+          }
+          experience={
+            <>
+              <Experience
+                experiences={workExperiences}
+                lens={lens}
+                locale={locale}
+                profile={profile}
+                id="experience"
+                title={experienceDict.title}
+                description={experienceDict.workDescription}
+                showCta
+              />
+              <Education education={education} locale={locale} />
+              <Experience
+                experiences={leadershipExperiences}
+                lens={lens}
+                locale={locale}
+                id="leadership"
+                title={experienceDict.leadershipTitle}
+                description={experienceDict.leadershipDescription}
+                showLensNote={false}
+                showCta={false}
+              />
+              <BetaPrograms programs={betaPrograms} locale={locale} />
+            </>
+          }
+          skills={
+            <>
+              <Skills categories={categories} lens={lens} locale={locale} />
+              <Certifications certifications={certifications} locale={locale} />
+            </>
+          }
+          contact={<Contact profile={profile} locale={locale} />}
+        />
       </main>
       <Footer locale={locale} />
     </div>

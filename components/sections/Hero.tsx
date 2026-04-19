@@ -68,8 +68,6 @@ export function Hero({ profile, lens, locale }: HeroProps) {
             <a
               href={getResumeHref(lens)}
               download={getResumeDownloadName(lens)}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 underline-offset-4 hover:text-foreground hover:underline"
             >
               {dict.resume}
